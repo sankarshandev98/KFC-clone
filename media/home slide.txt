@@ -1,5 +1,0 @@
-home 
-slide 
-1 :-https://images.ctfassets.net/9tka4b3550oc/6tpG1VeOvzeMZI6Gyw7eaK/44e4b22d5445776c149c896ba7192705/Property_1_V1__6_.jpg?q=75&w=1680
-2 :-https://images.ctfassets.net/9tka4b3550oc/6VaUcScpgJm3yfOJoeTrsu/c4c48bcc8abdde75503a86659eb0a017/FreeBeverageBucket_Desktop_Home_Hero_1440x640_V1.jpg?q=75&w=1680
-3 :-https://images.ctfassets.net/9tka4b3550oc/2MirqOJCIHWcjPioMJRq96/e4fb4e78ec27728cc00cbd611c031e20/Property_1_V2.jpg?q=75&w=1680

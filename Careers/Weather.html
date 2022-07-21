@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather</title>
+    <style>
+      button {
+        margin-bottom: 50px;
+      }
+      #container {
+        display: flex;
+        width: 90%;
+        margin: auto;
+        justify-content: space-evenly;
+      }
+      #left {
+        width: 48%;
+        height: 500px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #right {
+        width: 48%;
+        height: 500px;
+      }
+      .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        height: 500px;
+        width: 600px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 10px;
+      }
+      .mapouter {
+        position: relative;
+        text-align: right;
+        height: 500px;
+        width: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="query" placeholder="City Name" />
+    <button onclick="getData()">Search</button>
+    <button onclick="getLocation()">Current Location</button>
+    <div id="container">
+      <div id="left">
+        <h1 id="c"></h1>
+        <h4 id="min"></h4>
+        <h4 id="max"></h4>
+        <h4 id="wind"></h4>
+        <h4 id="cld"></h4>
+        <h4 id="rise"></h4>
+        <h4 id="set"></h4>
+      </div>
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe
+            width="600"
+            height="500"
+            id="gmap_canvas"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  async function getData() {
+    let city = document.getElementById("query").value;
+    document.getElementById("c").innerText = "Your City is " + city;
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=f8c34b7594f05c59562d545d5972954a`;
+    let url2 = `https://maps.google.com/maps?q=${city}&t=&z=13&ie=UTF8&iwloc=&output=embed`;
+    try {
+      let res = await fetch(url);
+      let data = await res.json();
+      let x = data.clouds.all;
+      document.getElementById("cld").innerText =
+        "Today weather is cloudy & the value is --> " + x;
+      let min_temp = data.main.temp_min;
+      document.getElementById("min").innerText =
+        "Minimum temperature in your city is --> " +
+        parseInt(min_temp) +
+        " degree fahrenheit";
+      let max_temp = data.main.temp_max;
+      document.getElementById("max").innerText =
+        "Maximum temperature in your city is --> " +
+        parseInt(max_temp) +
+        " degree fahrenheit";
+      let wind = data.wind.speed;
+      document.getElementById("wind").innerText =
+        "Wind speed in your city is --> " + parseInt(wind) + " meter/sec";
+      let sunrise = data.sys.sunrise;
+      document.getElementById("rise").innerText =
+        "Sunrise time in your city is --> " + sunrise;
+      let sunset = data.sys.sunset;
+      document.getElementById("set").innerText =
+        "Sunset time in your city is --> " + sunset;
+      let iframe = document.getElementById("gmap_canvas");
+      iframe.src = url2;
+    } catch (err) {
+      console.log(err);
+    }
+  }
+
+  function getLocation() {
+    navigator.geolocation.getCurrentPosition(success);
+    function success(pos) {
+      const crd = pos.coords;
+      console.log("Your current position is:");
+      console.log(`Latitude : ${crd.latitude}`);
+      console.log(`Longitude: ${crd.longitude}`);
+      console.log(`More or less ${crd.accuracy} meters.`);
+      currentLocation(crd.latitude, crd.longitude);
+    }
+  }
+
+  function currentLocation(lat, lon) {
+    const url3 = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=f8c34b7594f05c59562d545d5972954a`;
+    let iframe = document.getElementById("gmap_canvas");
+    iframe.src = url3;
+  }
+</script>

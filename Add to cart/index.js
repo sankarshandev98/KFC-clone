@@ -1,0 +1,1 @@
+// document.getElementById('your').innerHTML = null;

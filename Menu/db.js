@@ -1,486 +1,1080 @@
 let data = {
-  Featured: [
+  ChickenBuckets: [
     {
-      name: "Mac & Cheese Bowl",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-MacCheeseBowl?q=75",
-      calories: "660-790",
+      name: "5pc Leg Piece Bucket Meal",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000920.jpg?ver=17.57",
+      basePrice: 829.0,
+      availableprice: 619.05,
+      vegOrNonVeg: "Non veg",
+      Serves: "Serves 2",
+      description:
+        "Save 22% on 5 chicken Leg Pieces, 2 dips, 1 Medium Fries & a Pepsi PET [serves 2 ]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "Mac & Cheese Bowl Combo",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-MacCheeseBowl?q=75",
-      calories: "980-1400",
+      name: "Bucket for Two",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000892.jpg?ver=17.57",
+      basePrice: 744.0,
+      availableprice: 599.05,
+      vegOrNonVeg: "Non veg",
+      Serves: "Serves 2-3",
+      description:
+        "Flat Rs. 115 off on combo of 2pc Hot & Crispy, 2 pc Smoky Red Chicken & Large Popcorn [serves 2-3]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "KFC Chicken Sandwich Combo",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-cknsndcombo?q=75",
-      calories: "690-1160",
+      name: "10pc Leg Piece Bucket & 4 Dips",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K512.jpg?ver=17.57",
+      basePrice: 1330.0,
+      availableprice: 899.05,
+      vegOrNonVeg: "Non veg",
+      Serves: "Serves 3-4",
+      description:
+        "Leg before any wicket! Save 29% on 10 Leg Pieces & 4 Dips [serves 3-4]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "Sandwiches and Tenders Meal",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-sandwichandtendersmeal?q=75",
-      calories: "4700-7430",
+      name: "5pc Leg Piece Bucket & 2 Dips",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K511.jpg?ver=17.57",
+      basePrice: 665.0,
+      availableprice: 499.05,
+      vegOrNonVeg: "Non veg",
+      Serves: "Serves 2",
+      description:
+        "Save Rs. 141 on this favorite combo of 5 Leg Pieces & 2 Dips [serves 2]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "Sandwiches and Sides",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-sandwichandsidesmeal?q=75",
-      calories: "3040-4280",
+      name: "Ultimate Savings Bucket",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000638.jpg?ver=17.57",
+      basePrice: 1094.0,
+      availableprice: 699.05,
+      vegOrNonVeg: "Non veg",
+      Serves: "Serves 2-3",
+      description:
+        "Save 35% on signature bucket of 4pc Hot & crispy, 6 Wings, 4 strips, 3 Dips & Pepsi PET [serves 2-3 ]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "8 pc. Chicken + 8 Tenders Fill Up",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-8pcBucket&8TendersBucket?q=75",
-      calories: "5920-6260",
-    },
-  ],
-  Buckets: [
-    {
-      name: "8 pc. Meal",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-8pcBucketMealStandard?q=75",
-      calories: "2300-4980",
-    },
-    {
-      name: "8 pc. Fill Up",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-8pcFamilyFillUpDark?q=75",
-      calories: "3560-4940",
+      name: "Big 12",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000854.jpg?ver=17.57",
+      basePrice: 1046.0,
+      availableprice: 719.05,
+      vegOrNonVeg: "Non veg",
+      Serves: "Serves 2-3",
+      description:
+        "Save 28% on 6pc Hot & Crispy Chicken, 6 Hot Wings & 2 dips [serves 2- 3]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "8 pc. Fill Up",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-8pcFamilyFillUpStandard?q=75",
-      calories: "3560-4940",
+      name: "Mingles Bucket Meal",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000921.jpg?ver=17.57",
+      basePrice: 573.0,
+      availableprice: 479.05,
+      vegOrNonVeg: "Non veg",
+      Serves: "Serves 2",
+      description:
+        "Save Rs. 71 on 4 Hot Wings, 2 Chicken Strips, Reg Popcorn, medium fries & Pepsi PET [serves 2 ]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "8 pc. Chicken Bucket",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-8pcBucketStandard?q=75",
-      calories: "1020-2400",
+      name: "Big 8",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000891.jpg?ver=17.57",
+      basePrice: 1008.0,
+      availableprice: 684.76,
+      vegOrNonVeg: "Non veg",
+      Serves: "Serves 2- 3",
+      description:
+        "Save 29% on this variety bucket of 4pc Hot & Crispy chicken & 4pc Smoky Red chicken [serves 2- 3 ]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "8 pc. Chicken Bucket",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-8pcBucketDark?q=75",
-      calories: "920-2000",
+      name: "5pc Smoky Red Chicken",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K445.jpg?ver=17.57",
+      basePrice: 655.0,
+      availableprice: 499.05,
+      vegOrNonVeg: "Non veg",
+      Serves: "Serves 2",
+      description: "Flat 20% off on 5pc Smoky red grilled chicken [serves 2]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "8 pc. Meal",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-8pcBucketMealDark?q=75",
-      calories: "2200-4580",
+      name: "8 pc Hot & Crispy Chicken",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K009.jpg?ver=17.57",
+      basePrice: 968.0,
+      availableprice: 748.57,
+      vegOrNonVeg: "Non veg",
+      Serves: " Serves 3-4",
+      description:
+        "Save Rs. 182 & get 8pc signature Hot & crispy chicken [serves 3-4]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "12pc Meal (Variety) with FREE Beverage Bucket",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-12pcBucketMealBevBucket?q=75",
-      calories: "3450-7470",
+      name: "6 pc Hot & Crispy Chicken",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K012.jpg?ver=17.57",
+      basePrice: 726.0,
+      availableprice: 619.05,
+      vegOrNonVeg: "Non veg",
+      Serves: " Serves 2-3",
+      description:
+        "Flat 10% off on 6pc signature Hot & crispy chicken [serves 2-3]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "12pc Meal (Drums & Thighs) with FREE Beverage Bucket",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-12pcBucketMealBevBucket?q=75",
-      calories: "3300-6870",
+      name: "KFC Favorites",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000687.jpg?ver=17.57",
+      basePrice: 612.0,
+      availableprice: 419.05,
+      vegOrNonVeg: "Non veg",
+      Serves: "",
+      description:
+        "Save 27% on this combo Chicken Zinger, Large Popcorn & 4pc Hot Wings",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "12 pc. Chicken Bucket",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-12pcBucketStandard?q=75",
-      calories: "1530-3600",
-    },
-    {
-      name: "12 pc. Chicken Bucket",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-12pcBucketDark?q=75",
-      calories: "1380-3000",
-    },
-    {
-      name: "16 pc. Chicken Bucket",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-16pcBucketStandard?q=75",
-      calories: "2040-4800",
-    },
-    {
-      name: "16pc Meal (Variety) with FREE Beverage Bucket",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-16pcBucketMealBevBucket?q=75",
-      calories: "4600-9960",
-    },
-  ],
-  Tenders: [
-    {
-      name: "8 pc. Tenders Meal",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-8pcTendersMeal-test?q=75",
-      calories: "2910-4930",
-    },
-    {
-      name: "3 pc. Tenders Combo",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-TendersCombo?q=75",
-      calories: "780-1340",
-    },
-    {
-      name: "3 pc. Tenders Fill Up",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-TendersFU?q=75",
-      calories: "780-1340",
-    },
-    {
-      name: "4 pc. Tenders Combo",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-4TendersCombo?q=75",
-      calories: "790-1470",
-    },
-    {
-      name: "5 pc. Tenders Combo",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-5TenderCombo?q=75",
-      calories: "930-1610",
-    },
-    {
-      name: "5 pc. Tenders Box",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-5pcTendersBox?q=75",
-      calories: "1000-1840",
-    },
-    {
-      name: "3 pc. Nashville Hot Tenders Combo",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-3pcNHTendersCombo?q=75",
-      calories: "920-1360",
-    },
-    {
-      name: "5 pc. Nashville Hot Tenders Combo",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-5pcNHTendersCombo2?q=75",
-      calories: "1370-1810",
-    },
-    {
-      name: "8 pc. Tenders Bucket",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-new8pcTenders?q=75",
-      calories: "1630-2100",
-    },
-    {
-      name: "12 pc. Tenders Bucket",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-new12pcTenders?q=75",
-      calories: "1630-2100",
-    },
-    {
-      name: "12pc Tenders Meal with FREE Beverage Bucket",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-12pcTendersMealBevBucket?q=75",
-      calories: "4610-6290",
-    },
-    {
-      name: "16 pc. Tenders Bucket",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-new16pcTenders?q=75",
-      calories: "2610-4990",
-    },
-    {
-      name: "16pc Tenders Meal with FREE Beverage Bucket",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-16pcTendersMealBevBucket?q=75",
-      calories: "2910-4930",
-    },
-    {
-      name: "Popcorn Nuggets Combo",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-PopcornComboFries?q=75",
-      calories: "690-1250",
+      name: "Chick & Share",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000571.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 448.57,
+      vegOrNonVeg: "Non veg",
+      Serves: "Serves 2",
+      description:
+        "Save 22% & Pick any - 5pc Hot & Crispy OR 10 chicken strips OR 2 Large Popcorn [serves 2]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
   ],
-  Sandwiches: [
+  NewLaunch: [
     {
-      name: "Sandwiches and Tenders Meal",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-sandwichandtendersmeal?q=75",
-      calories: "4700-7430",
+      name: "Buddy Popcorn Nachos Meal",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002102.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 448.57,
+      vegOrNonVeg: "Non veg",
+      Serves: "Serves 2",
+      description:
+        "Two ka crunch, in one munch- for 2! Combo of 2 new Popcorn Nachos & a Pepsi PET [serves 2]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "Sandwiches and Sides",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-sandwichandsidesmeal?q=75",
-      calories: "3040-4280",
+      name: "Popcorn Nachos & Wings Combo",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002103.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 379.05,
+      vegOrNonVeg: "Non veg",
+      Serves: "Serves 1-2",
+      description:
+        "New Popcorn Nachos, 3pc Wings & 1 Pepsi PET in this delightful snack combo! [serves 1-2]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "KFC Chicken Sandwich Combo",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-cknsndcombo?q=75",
-      calories: "690-1160",
+      name: "Popcorn Nachos",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K664.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 199.05,
+      vegOrNonVeg: "Non veg",
+      Serves: "",
+      description:
+        "Crunchy popcorn & 2 delicious sauces paired with masala Doritos. 2 ka crunch, in 1 munch!",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "KFC Chicken Sandwich Box",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-cknsndbigbox?q=75",
-      calories: "830-1620",
+      name: "10pc Strips with Dynamite Sauce",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002091.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 639.05,
+      vegOrNonVeg: "Non veg",
+      Serves: "Serves 2-3",
+      description:
+        "Dipping combo of 10pc chicken strips & our new Dynamite Spicy Mayo Sauce Bottle [serves 2-3]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "KFC Chicken Sandwich",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-cknsndalc?q=75",
-      calories: "620-6500",
+      name: "10pc Strips with Nashville Sauce",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002092.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 639.05,
+      vegOrNonVeg: "Non veg",
+      Serves: "Serves 2-3",
+      description:
+        "Dipping combo of 10pc chicken strips & our new Nashville Hot Pepper Sauce Bottle [serves 2-3]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "Chicken Little",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-AlcChLtl?q=75",
-      calories: "300-540",
+      name: "6pc Hot & Crispy with Dynamite Sauce",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002093.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 779.05,
+      vegOrNonVeg: "Non veg",
+      Serves: "Serves 3",
+      description:
+        "6pc Hot & Crispy Chicken paired with our new Dynamite Spicy Mayo Sauce Bottle [serves 3]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "Chicken Little Combo",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-ChLtlCombo?q=75",
-      calories: "670-1190",
-    },
-  ],
-  FriedChicken: [
-    {
-      name: "1 pc. Breast Combo",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-1BrFU?q=75",
-      calories: "580-1340",
-    },
-    {
-      name: "2 pc. Drum & Thigh Fill Up",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-2DTFU?q=75",
-      calories: "600-1310",
+      name: "6pc Hot & Crispy with Nashville Sauce",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002094.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 779.05,
+      vegOrNonVeg: "Non veg",
+      Serves: "Serves 3",
+      description:
+        "6pc Hot & Crispy Chicken paired with our new Nashville Hot Pepper Sauce Bottle [serves 3]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "2 pc. Drum & Thigh Combo",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-2DTCombo?q=75",
-      calories: "600-1310",
+      name: "Friendship Bucket with Dynamite Sauce",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002095.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 879.05,
+      vegOrNonVeg: "Non veg",
+      Serves: "Serves 3-4",
+      description:
+        "3pc Hot & Crispy, 3 Wings, 3 Strips, Large Popcorn & our new Dynamite Mayo Bottle [serves 3-4]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "2 pc. Chicken Combo - Breast & Wing",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-2BWCombo?q=75",
-      calories: "530-1390",
+      name: "Friendship Bucket with Nashville Sauce",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000447.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 879.05,
+      vegOrNonVeg: "Non veg",
+      Serves: "Serves 3-4",
+      description:
+        "3pc Hot & Crispy, 3 Wings, 3 Strips, Large Popcorn & our new Nashville Bottle [serves 3-4]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "3 pc. Chicken Combo - 2 Breasts, 1 Wing",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-3pcCombo1B1T1W?q=75",
-      calories: "740-1920",
+      name: "Nashville Hot Pepper Sauce Bottle",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K660.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 189.52,
+      vegOrNonVeg: "Non veg",
+      Serves: "",
+      description:
+        "Nashville in a bottle! Our signature hot, peppery sauce which pairs well with all things KFC.",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "3 pc. Chicken Combo - 2 Thighs, 1 Drum",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-3pcCombo2T1D?q=75",
-      calories: "630-1520",
+      name: "Dynamite Spicy Mayo Sauce Bottle",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K659.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 189.52,
+      vegOrNonVeg: "Non veg",
+      Serves: "",
+      description:
+        "Spicy, punchy mayoàbottled up just for you & your favorite KFC! Our signature launch.",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "3 pc. Chicken Combo - Breast, Thigh, and Wing",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-3pcCombo1B1T1W?q=75",
-      calories: "680-1720",
+      name: "Spicy Mix Fries -Large",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K669.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 139.04,
+      vegOrNonVeg: "Veg",
+      Serves: "",
+      description: "Crispy fries with a spicy chilli lime sprinkle",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Veg_dot_Icon.2636651d.svg",
     },
     {
-      name: "3 pc. Chicken Box - 2 Breasts, 1 Wing",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-3pcBox2B1W?q=75",
-      calories: "810-2150",
-    },
-    {
-      name: "3 pc. Chicken Box - 2 Thighs, 1 Drum",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-3pcBox2T1D?q=75",
-      calories: "700-1750",
-    },
-    {
-      name: "4 pc. Chicken Combo",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-4pcCombo?q=75",
-      calories: "760-1890",
-    },
-    {
-      name: "Kentucky Fried Wings Combo",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-6WingsUnsauced?q=75",
-      calories: "650-1380",
-    },
-    {
-      name: "48 Kentucky Fried Wings",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-48WingsUnsauced?q=75",
-      calories: "4640-7040",
-    },
-    {
-      name: "24 Kentucky Fried Wings",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-24WingsUnsauced?q=75",
-      calories: "2320-3250",
-    },
-    {
-      name: "12 Kentucky Fried Wings",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-12WingsUnsauced?q=75",
-      calories: "1160-1760",
-    },
-    {
-      name: "6 Kentucky Fried Wings",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-6WingsUnsauced?q=75",
-      calories: "580-880",
-    },
-  ],
-  PotPiesBowls: [
-    {
-      name: "Mac & Cheese Bowl Combo",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-MacCheeseBowlSideDrink?q=75",
-      calories: "980-1400",
-    },
-    {
-      name: "Famous Bowl Fill Up",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-FamousBowlFillUp?q=75",
-      calories: "840-1120",
-    },
-    {
-      name: "Pot Pie Fill Up",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-PotPieFillUp?q=75",
-      calories: "840-1120",
-    },
-  ],
-  aLaCarte: [
-    {
-      name: "A La Carte Breast",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-AlcBreast?q=75",
-      calories: "210-530",
-    },
-    {
-      name: "A La Carte Drum",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-AlcLeg?q=75",
-      calories: "80-170",
-    },
-    {
-      name: "A La Carte Thigh",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-AlcThigh?q=75",
-      calories: "150-330",
-    },
-    {
-      name: "A La Carte Wing",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-AlcWing?q=75",
-      calories: "70-170",
-    },
-    {
-      name: "A La Carte Tender",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-AlcTender2?q=75",
-      calories: "390-530",
-    },
-    {
-      name: "Mac & Cheese Bowl",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-MacCheeseBowl?q=75",
-      calories: "660-790",
-    },
-    {
-      name: "Famous Bowl",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-FamousBowl?q=75",
-      calories: "840-1120",
-    },
-    {
-      name: "Pot Pie",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-PotPie?q=75",
-      calories: "720",
+      name: "Spicy Mix Fries -Medium",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K670.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 114.28,
+      vegOrNonVeg: "veg",
+      Serves: "",
+      description: "Crispy fries with a spicy chilli lime sprinkle",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Veg_dot_Icon.2636651d.svg",
     },
   ],
-  Sides: [
+  BiryaniBuckets: [
     {
-      name: "Secret Recipe Fries",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-IndFries?q=75",
-      calories: "230-930",
+      name: "Classic Biryani Combo",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002016.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 740.0,
+      vegOrNonVeg: "Non veg",
+      Serves: "Serves 2-3",
+      description:
+        "Large portions of Biryani rice with 2 pc Hot & Crispy, 2 Gravies, 4 Strips & Pepsi PET [serves 2-3]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "Mashed Potatoes & Gravy",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-IndMashGravy?q=75",
-      calories: "130-590",
+      name: "Smoky Grilled Biryani Combo",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002017.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 740.0,
+      vegOrNonVeg: "Non veg",
+      Serves: "Serves 2-3",
+      description:
+        "Large portions of Biryani rice with 2 pc Smoky Red, 2 Gravies, Med Popcorn & Pepsi PET [serves 2-3]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "Mac & Cheese",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-IndMacCheese?q=75",
-      calories: "140-540",
+      name: "Popcorn Biryani Combo",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002052.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 690.48,
+      vegOrNonVeg: "Non veg",
+      Serves: "Serves 2-3",
+      description:
+        "Large portions of Biryani & Chicken Popcorn, 2 Spicy Gravies, 4pc Wings & Pepsi PET [serves 2-3]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "Biscuit",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-biscuit?q=75",
-      calories: "180",
+      name: "Classic Chicken Biryani Bucket (Large)",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K626.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 475.24,
+      vegOrNonVeg: "Non veg",
+      Serves: " Serves 2",
+      description:
+        "Large portions of Biryani rice served with 2 pc Hot & Crispy Chicken & 2 Gravies [serves 2]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "Cole Slaw",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-IndColeslaw?q=75",
-      calories: "170-640",
+      name: "Popcorn Chicken Biryani Bucket (Large)",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K627.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 475.24,
+      vegOrNonVeg: "Non veg",
+      Serves: " Serves 2",
+      description:
+        "Large portions of Biryani rice served with Chicken Popcorn & 2 Gravies [serves 2]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "Gravy",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-IndGravy?q=75",
-      calories: "80-130",
+      name: "Smoky Grilled Biryani Bucket (Large)",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K628.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 475.24,
+      vegOrNonVeg: "Non veg",
+      Serves: " Serves 2",
+      description:
+        "Large portions of Biryani rice served with 2 pc Smoky Red Chicken & 2 Gravies [serves 2]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "Whole Kernel Corn",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-IndCorn?q=75",
-      calories: "70-280",
+      name: "Classic Chicken Biryani Bucket",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K623.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 229.52,
+      vegOrNonVeg: "Non veg",
+      Serves: "Serves 1",
+      description:
+        "Hyderabadi style Biryani rice served with 1 pc Hot & Crispy & Spicy Gravy [serves 1]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "Mashed Potatoes (No Gravy)",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-IndMash?q=75",
-      calories: "110-460",
+      name: "Popcorn Chicken Biryani Bucket",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K624.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 229.52,
+      vegOrNonVeg: "Non veg",
+      Serves: "Serves 1",
+      description:
+        "Hyderabadi style Biryani rice served with Popcorn & Spicy Gravy [serves 1]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    },
+    {
+      name: "Smoky Grilled Biryani Bucket",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K625.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 229.52,
+      vegOrNonVeg: "Non veg",
+      Serves: "Serves 1",
+      description:
+        "Hyderabadi style Biryani rice served with 1 pc Smoky Red & Spicy Gravy [serves 1]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    },
+    {
+      name: "Smoky Grilled Biryani Bucket",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K622.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 188.57,
+      vegOrNonVeg: "Veg",
+      Serves: "Serves 1",
+      description:
+        "Hyderabadi style Biryani rice served with Veg Patty & Spicy Gravy [serves 1]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Veg_dot_Icon.2636651d.svg",
     },
   ],
-  Sauces: [
+  BoxMeals: [
     {
-      name: "KFC Sauce",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-KFCSauce?q=75",
-      calories: "90",
+      name: "All Chicken Box",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000999.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 189.52,
+      vegOrNonVeg: "Non veg",
+      Serves: "",
+      description:
+        "A Box with your favorites! Get 1 pc Hot & Crispy, 2 Hot Wings & 1 Chicken Strip at a deal price",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "Honey BBQ",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-HoneyBBQ?q=75",
-      calories: "40",
+      name: "Classic Zinger Box",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00001002.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 313.33,
+      vegOrNonVeg: "Non veg",
+      Serves: "",
+      description:
+        "A classic deal for Zinger lovers : Get 1 Classic Zinger, 2 Hot Wings, 1 Veg Patty & Pepsi",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "Honey Mustard",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-HoneyMustard?q=75",
-      calories: "120",
+      name: "Zinger Tandoori Box",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00001003.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 313.33,
+      vegOrNonVeg: "Non veg",
+      Serves: "",
+      description:
+        "A deal for the Tandoori lovers : Get 1 Tandoori Zinger, 2 Hot Wings, 1 Veg Patty & Pepsi",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "Classic Ranch",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-Ranch?q=75",
-      calories: "100",
+      name: "Popcorn Biryani Box",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00001039.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 328.57,
+      vegOrNonVeg: "Non veg",
+      Serves: "",
+      description:
+        "Biryani lovers unite : Get 1 Popcorn Biryani Bucket with gravy, 2 Hot Wings & Pepsi",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "Honey Sauce",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-honeySauce2?q=75",
-      calories: "30",
+      name: "Veg Zinger Box",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00001004.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 313.33,
+      vegOrNonVeg: "Non veg",
+      Serves: "",
+      description:
+        "A deal for the Veg Zinger lovers : Get 1 Veg Zinger, 2 Veg Patties & a Pepsi",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "Hot Sauce",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-hotSauce2?q=75",
-      calories: "0",
-    },
-    {
-      name: "Ketchup",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-ketchup2?q=75",
-      calories: "30",
+      name: "Veg Biryani Box",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00001038.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 279.05,
+      vegOrNonVeg: "Veg",
+      Serves: "",
+      description:
+        "Biryani lovers unite : Get 1 Veg Biryani Bucket with gravy, 1 Veg Patty & a Pepsi",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Veg_dot_Icon.2636651d.svg",
     },
   ],
-  Desserts: [
+  Burgers: [
     {
-      name: "Chocolate Chip Cookie",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-1Cookie?q=75",
-      calories: "120",
+      name: "2 Chicken Krisper Burgers",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00001025.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 228.57,
+      vegOrNonVeg: "Non veg",
+      Serves: "",
+      description: "2 delicious chicken value burgers - at a deal price",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "Chocolate Chip Cake",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-CCCake?q=75",
-      calories: "300",
+      name: "2 Veg Krisper Burgers",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00001022.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 158.1,
+      vegOrNonVeg: "Veg",
+      Serves: "",
+      description: "2 delicious veg value burgers - at a deal price",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Veg_dot_Icon.2636651d.svg",
+    },
+    {
+      name: "Chicken & Krispers Combo",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00001027.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 519.05,
+      vegOrNonVeg: "Non veg",
+      Serves: "",
+      description:
+        "Deal combo of 2 chicken value burgers, 2 pc Hot & Crispy, 2 dips & a chilled Pepsi PET",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    },
+    {
+      name: "Tandoori Zinger Burger",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K540.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 199.05,
+      vegOrNonVeg: "Non veg",
+      Serves: "",
+      description: "Chicken zinger with a delicious tandoori sauce",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    },
+    {
+      name: "Mixed Zinger Doubles",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000956.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 348.57,
+      vegOrNonVeg: "Non veg",
+      Serves: "",
+      description:
+        "Best-seller combo of classic chicken zinger & tandoori zinger",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    },
+    {
+      name: "Classic Zinger Burger",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K439.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 189.52,
+      vegOrNonVeg: "Non veg",
+      Serves: "",
+      description:
+        "Signature burger made with a crunchy chicken fillet, veggies & a delicious mayo sauce",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    },
+    {
+      name: "Buddy Meal",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000730.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 499.05,
+      vegOrNonVeg: "Non veg",
+      Serves: "",
+      description:
+        "Share 2 Classic Chicken Zingers & a Medium Popcorn in this delightful combo for 2",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    },
+    {
+      name: "Veg Zinger Burger",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K146.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 179.05,
+      vegOrNonVeg: "Veg",
+      Serves: "",
+      description:
+        "Signature veg burger with crispy patties, veggies & a tangy sauce",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Veg_dot_Icon.2636651d.svg",
+    },
+    {
+      name: "2 Veg Krispers Meal",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00001023.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 268.57,
+      vegOrNonVeg: "Veg",
+      Serves: "",
+      description:
+        "2 veg value burgers, crispy medium fries & 2 delicious dips at a deal price!",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Veg_dot_Icon.2636651d.svg",
     },
   ],
-  Drinks: [
+  StayHomeSpecials: [
     {
-      name: "Pepsi",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-Pepsi?q=75",
-      calories: "250-380",
+      name: "Super Snacker Combo",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00001099.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 450.48,
+      vegOrNonVeg: "Non veg",
+      Serves: "Serves 1-2",
+      description:
+        "Best of snacks with a Medium Popcorn, 4 strips, 1 dip & a chilled Pepsi Black [serves 1-2]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "Diet Pepsi",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-dietPepsi?q=75",
-      calories: "0",
+      name: "Chick’n Wings Combo",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002000.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 450.48,
+      vegOrNonVeg: "Non veg",
+      Serves: "Serves 1-2",
+      description:
+        "Enjoy 2pc Hot & Crispy Chicken, 4 wings , 2 dips & a chilled Pepsi Black [serves 1-2]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "Mountain Dew",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-mtndew?q=75",
-      calories: "270-410",
+      name: "Classic Biryani Combo",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002016.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 740.0,
+      vegOrNonVeg: "Non veg",
+      Serves: "Serves 2-3",
+      description:
+        "Large portions of Biryani rice with 2 pc Hot & Crispy, 2 Gravies, 4 Strips & Pepsi PET [serves 2-3]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "Mountain Dew Sweet Lightning",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-mtndewsweetlightning?q=75",
-      calories: "160-230",
+      name: "Stay Home Bucket",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000732.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 788.57,
+      vegOrNonVeg: "Non veg",
+      Serves: "Serves 3",
+      description:
+        "Save 21% on 4pc Hot & Crispy, 4 Wings, 6 Chicken Strips & 2 dips [serves 3]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "Dr. Pepper",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-drPepper?q=75",
-      calories: "240-360",
+      name: "Classic Zinger Meal",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002001.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 344.76,
+      vegOrNonVeg: "Non veg",
+      Serves: "Serves 1",
+      description:
+        "Favorite combo of Classic Zinger Burger, Medium Fries & a chilled Pepsi Black [serves 1]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "Sierra Mist",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-sierramist?q=75",
-      calories: "260-380",
+      name: "Smoky Grilled Biryani Combo",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002017.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 740.0,
+      vegOrNonVeg: "Non veg",
+      Serves: "Serves 2-3",
+      description:
+        "Large portions of Biryani rice with 2 pc Smoky Red, 2 Gravies, Med Popcorn & Pepsi PET [serves 2-3]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "Sweet Tea",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-sweetTea?q=75",
-      calories: "280-430",
+      name: "Family Feast",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000974.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 828.57,
+      vegOrNonVeg: "Non veg",
+      Serves: "Serves 3",
+      description:
+        "Family Deal of 3 chicken zingers, a medium popcorn, medium fries & a chilled Pepsi PET [serves 3]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     },
     {
-      name: "Lemonade",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-LemMed?q=75",
-      calories: "140-210",
+      name: "Chick'n Strips Solo Combo",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002002.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 419.05,
+      vegOrNonVeg: "Non veg",
+      Serves: "Serves 1",
+      description:
+        "Go solo with 1 pc Hot & Crispy, 3 strips, Medium Fries & a chilled Pepsi Black [serves 1]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    },
+  ],
+  Snacks: [
+    {
+      name: "Spicy Mix Fries -Large",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K669.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 139.04,
+      vegOrNonVeg: "Veg",
+      Serves: "",
+      description: "Crispy fries with a spicy chilli lime sprinkle",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Veg_dot_Icon.2636651d.svg",
     },
     {
-      name: "Strawberry Lemonade",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-StrLemMed?q=75",
-      calories: "170-260",
+      name: "Spicy Mix Fries -Medium",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K670.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 114.28,
+      vegOrNonVeg: "Veg",
+      Serves: "",
+      description: "Crispy fries with a spicy chilli lime sprinkle",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Veg_dot_Icon.2636651d.svg",
     },
     {
-      name: "1/2 Gallon Beverage",
-      img: "https://digitaleat.kfc.com/menus/image/bare/kfc-BevBucket?q=75",
-      calories: "0-910",
+      name: "Chicken & Fries Bucket",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000789.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 299.05,
+      vegOrNonVeg: "Non veg",
+      Serves: "",
+      description:
+        "Crowd-favorite combo of 2pc Hot & Crispy chicken with Medium Fries",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    },
+    {
+      name: "Popcorn & Fries bucket",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000792.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 319.05,
+      vegOrNonVeg: "Non veg",
+      Serves: "",
+      description: "Large Chicken Popcorn with Med Fries - at a deal price",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    },
+    {
+      name: "Mingles Bucket",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K264.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 339.05,
+      vegOrNonVeg: "Non veg",
+      Serves: "Serves 1-2",
+      description:
+        "Save 13% on this mingle of 4 Wings, 2 Strips & a Reg Popcorn [serves 1-2]",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    },
+    {
+      name: "4pc Hot & Crispy Chicken",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K008.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 428.57,
+      vegOrNonVeg: "Non veg",
+      Serves: "",
+      description: "4 pcs of signature Hot & crispy chicken at a deal price",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    },
+    {
+      name: "Large Popcorn",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K223.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 228.57,
+      vegOrNonVeg: "Non veg",
+      Serves: "",
+      description: "Signature bite-sized boneless chicken, with special spices",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    },
+    {
+      name: "Medium Popcorn",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K137.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 164.76,
+      vegOrNonVeg: "Non veg",
+      Serves: "",
+      description: "Signature bite-sized boneless chicken, with special spices",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    },
+    {
+      name: "Regular Popcorn",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K136.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 115.24,
+      vegOrNonVeg: "Non veg",
+      Serves: "",
+      description: "Signature bite-sized boneless chicken, with special spices",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    },
+    {
+      name: "Large Fries",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K138.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 119.05,
+      vegOrNonVeg: "Veg",
+      Serves: "",
+      description: "Jazz up your meal with crispy large fries!",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Veg_dot_Icon.2636651d.svg",
+    },
+    {
+      name: "2 pcs Smoky Red Chicken",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K444.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 248.57,
+      vegOrNonVeg: "Non veg",
+      Serves: "",
+      description: "Spicy, red, grilled chicken",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    },
+    {
+      name: "Medium Fries",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K016.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 99.05,
+      vegOrNonVeg: "Veg",
+      Serves: "",
+      description: "Jazz up your meal with Crispy Fries!",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Veg_dot_Icon.2636651d.svg",
+    },
+    {
+      name: "2 pc Hot & Crispy Chicken",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K007.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 229.52,
+      vegOrNonVeg: "Non veg",
+      Serves: "",
+      description: "Signature Hot & crispy chicken",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    },
+    {
+      name: "6pc Boneless Chicken strips",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K037.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 259.05,
+      vegOrNonVeg: "Non veg",
+      Serves: "",
+      description: "Tender, juicy, signature boneless chicken strips",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    },
+    {
+      name: "1 pc Smoky Red Chicken",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K443.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 124.76,
+      vegOrNonVeg: "Non veg",
+      Serves: "",
+      description: "Spicy, red, grilled chicken",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    },
+    {
+      name: "4pc Hot Chicken Wings",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K303.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 164.76,
+      vegOrNonVeg: "Non veg",
+      Serves: "",
+      description: "Seasoned, signature KFC chicken wings",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    },
+    {
+      name: "3pc Boneless Chicken strips",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K036.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 164.76,
+      vegOrNonVeg: "Non veg",
+      Serves: "",
+      description: "Tender, juicy, signature boneless chicken strips",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    },
+    {
+      name: "Choco Mud Pie",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K496.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 128.57,
+      vegOrNonVeg: "Veg",
+      Serves: "",
+      description:
+        "Chocolate lovers unite! Say hello to our creamy chocolate & cake dessert- a must try!",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Veg_dot_Icon.2636651d.svg",
+    },
+    {
+      name: "2 pc Veg Patty",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K351.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 155.24,
+      vegOrNonVeg: "Veg",
+      Serves: "",
+      description: "Delicious, crispy, veg add-on",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Veg_dot_Icon.2636651d.svg",
+    },
+    {
+      name: "Coffee Mousse Cake",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K497.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 128.57,
+      vegOrNonVeg: "Veg",
+      Serves: "",
+      description:
+        "Coffee, chocolate, cake…whats not to love? Enjoy this for coffee-licious temptations!",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Veg_dot_Icon.2636651d.svg",
+    },
+    {
+      name: "Tandoori Masala Dip",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K616.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 28.57,
+      vegOrNonVeg: "Veg",
+      Serves: "",
+      description: "Special tandoori flavor dip to add a twist to your meal",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Veg_dot_Icon.2636651d.svg",
+    },
+    {
+      name: "Nashville Hot Pepper Sauce Bottle",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K660.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 189.52,
+      vegOrNonVeg: "Non veg",
+      Serves: "",
+      description:
+        "Nashville in a bottle! Our signature hot, peppery sauce which pairs well with all things KFC.",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    },
+    {
+      name: "Dynamite Spicy Mayo Sauce Bottle",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K659.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 189.52,
+      vegOrNonVeg: "Non veg",
+      Serves: "",
+      description:
+        "Spicy, punchy mayoàbottled up just for you & your favorite KFC! Our signature launch.",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    },
+    {
+      name: "Pack of 4 Dips",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000852.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 109.52,
+      vegOrNonVeg: "Veg",
+      Serves: "",
+      description: "Adding dips is always a good idea!",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Veg_dot_Icon.2636651d.svg",
+    },
+    {
+      name: "Nashville Hot Pepper Dip",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K662.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 28.57,
+      vegOrNonVeg: "Veg",
+      Serves: "",
+      description: "Hot, peppery goodness of Nashville - our new signature dip",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Veg_dot_Icon.2636651d.svg",
+    },
+    {
+      name: "Pack of 2 Dips",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000853.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 57.14,
+      vegOrNonVeg: "Veg",
+      Serves: "",
+      description: "Adding dips is always a good idea!",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Veg_dot_Icon.2636651d.svg",
+    },
+    {
+      name: "Dynamite Spicy Mayo Dip",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000853.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 28.57,
+      vegOrNonVeg: "Veg",
+      Serves: "",
+      description: "Spicy, punchy mayo -our new signature dip",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Veg_dot_Icon.2636651d.svg",
+    },
+  ],
+  beverages: [
+    {
+      name: "Pepsi PET",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K350.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 57.14,
+      vegOrNonVeg: "Veg",
+      Serves: "",
+      description: "Pepsi PET",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Veg_dot_Icon.2636651d.svg",
+    },
+    {
+      name: "Pepsi Can 330 ml",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K485.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 57.14,
+      vegOrNonVeg: "Veg",
+      Serves: "",
+      description: "Pepsi Can 330 ml",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Veg_dot_Icon.2636651d.svg",
+    },
+    {
+      name: "7UP Can 330 ml",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K487.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 57.14,
+      vegOrNonVeg: "Veg",
+      Serves: "",
+      description: "7UP Can 330 ml",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Veg_dot_Icon.2636651d.svg",
+    },
+    {
+      name: "Pepsi Black Can 330 ml",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K486.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 57.14,
+      vegOrNonVeg: "Veg",
+      Serves: "",
+      description: "Pepsi Black Can 330 ml",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Veg_dot_Icon.2636651d.svg",
+    },
+    {
+      name: "Mirinda Can 330 ml",
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K488.jpg?ver=17.57",
+      basePrice: "",
+      availableprice: 57.14,
+      vegOrNonVeg: "Veg",
+      Serves: "",
+      description: "Mirinda Can 330 ml",
+      NonVegIcon:
+        "https://online.kfc.co.in/static/media/Veg_dot_Icon.2636651d.svg",
     },
   ],
 };
 
-localStorage.setItem("menu",JSON.stringify(data))
+localStorage.setItem("menu", JSON.stringify(data));

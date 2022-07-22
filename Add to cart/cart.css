@@ -1,0 +1,126 @@
+#mcart {
+    width: 90%;
+    height: 80px;
+    margin: auto;
+}
+
+#mcart>h1 {
+    font-family: 'Roboto Condensed';
+    margin-top: 16px;
+}
+
+#your {
+    width: 90%;
+    height: 550px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F8F7F5;
+    margin-top: 60px;
+}
+
+#faq {
+    width: 85%;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto Condensed';
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+#yleft {
+    width: 40%;
+    height: 100%;
+    font-family: 'Roboto Condensed';
+    font-size: 30px;
+    text-align: left;
+    margin-left: 10%;
+    line-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#yleft>button {
+    width: 30%;
+    padding: 14px;
+    border-radius: 50px;
+    background-color: #E4002B;
+    color: white;
+    border: none;
+
+}
+
+#yright {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#fleft {
+    width: 40%;
+    height: 100%;
+}
+
+#fright {
+    width: 50%;
+    height: 100%;
+}
+
+hr {
+    padding: 1px;
+    background-color: #E3E3E3;
+    border-radius: 5px;
+    border: none;
+}
+
+#fleft>div {
+    width: 90%;
+    display: flex;
+    align-items: baseline;
+    margin: auto;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-top: 27px;
+    margin-bottom: 27px;
+}
+
+#fleft>div>img {
+    width: 8px;
+    height: 8px;
+}
+
+#fq {
+    width: 180px;
+    height: 50px;
+    font-family: 'Roboto Condensed';
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 50px;
+    background-color: transparent;
+    margin-top: 25px;
+}
+
+#rb>button {
+    padding: 0px 60px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Roboto Condensed';
+    gap: 10px;
+}
+
+#rb {
+    margin-top: 22px;
+    display: flex;
+    width: 72%;
+    justify-content: space-between;
+}

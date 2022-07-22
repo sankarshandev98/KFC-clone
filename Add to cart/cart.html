@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="//db.onlinewebfonts.com/c/2be9f95ec30c2c016b07414bc0ad268b?family=Zurich" rel="stylesheet"
+        type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #container {
+            display: flex;
+            width: 100%;
+        }
+
+        #container>div:first-child {
+            display: flex;
+            width: 70%;
+        }
+
+        #cart-header>h1 {
+            display: block;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            text-align: center;
+            font-size: 28px;
+            font-family: "Zurich Extended", 'Roboto', sans-serif;
+            line-height: 30.3333px;
+            color: #444444;
+            font-weight: 700;
+        }
+
+        #thead>th>span {
+            font-size: 14px;
+            color: #7e7b79;
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        th:nth-child(1) {
+            padding-left: 50px;
+            text-align: left;
+
+        }
+
+        th:nth-child(2) {
+            padding-right: 20px;
+            padding-left: 20px;
+            text-align: left;
+        }
+
+        th:nth-child(3) {
+            width: 200px;
+            text-align: left;
+            padding-left: 2px;
+        }
+
+        p {
+            margin-left: 50px;
+            margin-bottom: 50px;
+            margin-top: 100px;
+            font-size: 14px;
+            color: #444444;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        label {
+            margin-left: 50px;
+            font-size: 14px;
+            color: #444444;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        textarea {
+            margin-left: 50px;
+            font-size: 14px;
+            color: #444444;
+            border-radius: 30px;
+            font-family: 'Roboto', sans-serif;
+            padding-left: 20px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #td1 {
+            margin-top: 40px;
+            height: 90px;
+            display: flex;
+        }
+
+        #td1>div:first-child {
+            width: 100px;
+            height: 90px;
+            margin-left: 50px;
+        }
+
+        #td1>div:last-child {
+
+            width: 500px;
+            height: 90px;
+            margin-left: 50px;
+        }
+
+        #td2 {
+
+            margin-top: -40px;
+            height: 30px;
+            border-radius: 20px;
+            border: 05.px solid gray;
+        }
+
+        button {
+
+            margin-left: 20px;
+            margin-top: 5px;
+            border: none;
+            background-color: white;
+            font-size: 18px;
+            font-weight: 500;
+            color: #444444;
+        }
+
+        button+span {
+            margin-right: -10px;
+            margin-left: 15px;
+            font-size: 18px;
+            font-weight: 400;
+            color: #444444;
+        }
+
+        #btn {
+            font-size: 12px;
+            margin-left: 30px;
+            text-decoration: underline;
+            font-weight: none;
+            color: #7e7b79;
+        }
+
+        #btn:hover {
+            color: #444444;
+        }
+
+        td>p {
+            margin-top: -10px;
+            font-size: 18px;
+            color: blue;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #444444;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        #sprice {
+            margin-top: 10px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            color: #7e7b79;
+
+        }
+
+        span {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            color: #7e7b79;
+        }
+
+        #total-section {
+            width: 30%;
+            height: 400px;
+            position: relative;
+
+        }
+
+        #total-section>div {
+            border: 1px solid white;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 50px;
+            border-radius: 10px;
+            background-color: #f5f5f5;
+        }
+
+        #total-section>div>div:nth-child(1) {
+
+            margin-top: 40px;
+            height: 30px;
+        }
+
+        #total-section>div>div>span {
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            color: #444444;
+            margin-left: 20px;
+        }
+
+        #total-section>div>div:nth-child(2) {
+
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+
+        #total-section>div>div:nth-child(2)>button {
+            background-color: #f5f5f5;
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+
+        #total-section>div>div:nth-child(3)>span {
+
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 0.3rem;
+            color: #7e7b79;
+        }
+
+        #total-section>div>div:nth-child(4) {
+            border: 0.5px solid white;
+            font-size: 14px;
+            margin: 20px;
+            margin-bottom: 40px;
+            text-align: center;
+            margin-top: 20px;
+            height: 48px;
+            border-radius: 30px;
+            background-color: #3b07ff;
+        }
+
+        #total-section>div>div:nth-child(4)>button {
+
+            display: flex;
+            font-size: 14px;
+            margin: auto;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #3b07ff;
+        }
+
+        #total-section>p {
+            margin-top: 20px;
+            margin-left: 15px;
+        }
+
+        #payment {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            <div id="cart-header">
+                <h1>CART</h1>
+            </div>
+            <div id="container">
+                <div>
+                    <form action="">
+                        <table>
+                            <thead>
+                                <tr id="thead">
+                                    <th><span>PRODUCT</span></td>
+                                    <th><span>QUANTITY</span></td>
+                                    <th><span>TOTAL</span></td>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <!-- append cart products -->
+                            </tbody>
+
+                        </table>
+                        <div>
+                            <p><input type="checkbox"> <label for="">For ₹
+                                    50 please wrap the products in this order.</label></p>
+                            <label for="">Gift message (free and
+                                optional):</label>
+                            <br>
+                            <textarea name="message" id="" cols="110" rows="5"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div id="total-section">
+                    <div>
+                        <div>
+                            <span>TOTAL</span>
+                            <span id="total"></span>
+                        </div>
+                        <div><button>Add order note</button></div>
+                        <div>
+                            <span>
+                                This is the final price inclusive of taxes.
+                                Shipping is always free. <br>
+                                No hidden surprises. </span> 😃
+                        </div>
+                        <div>
+                            <button id="payment"><img
+                                    src="https://www.linkpicture.com/q/Screenshot-2022-06-18-152916.png"
+                                    type="image">CHECKOUT</button>
+                        </div>
+                    </div>
+                    <p>You have 1,000 Club Audiophile points.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div>
+        <!-- productsviews -->
+    </div>
+</body>
+
+</html>
+<script>
+    // data
+    let data = JSON.parse(localStorage.getItem('cartLSS'));
+    let total = 0;
+    displayCart(data);
+
+    function displayCart(data) {
+
+        data.map(function (elem, index) {
+            // quantity adding and reducing for add quantity
+            document.querySelector("tbody").innerHtml = "";
+            elem.quantity = 1;
+
+            // table data first ------->
+            let tr = document.createElement("tr");
+            let td1 = document.createElement("td");
+            let divm = document.createElement("div");
+            divm.setAttribute("id", "td1");
+            let divc1 = document.createElement("div");
+            let img = document.createElement("img");
+            img.src = elem.image_url;
+            let divc2 = document.createElement("div");
+            let anchor = document.createElement("a");
+            let span = document.createElement("span");
+            span.innerText = "Black";
+            anchor.innerText = elem.name;
+            anchor.setAttribute("href", elem.image_url);
+            let divcsub = document.createElement("div");
+            let sprice = document.createElement("span");
+            divcsub.setAttribute("id", "sprice");
+            sprice = "₹" + elem.price;
+            divcsub.append(sprice);
+            divc2.append(anchor, span, divcsub);
+            divc1.append(img);
+            divm.append(divc1, divc2);
+            td1.append(divm);
+            // table data second ------->
+            let td2 = document.createElement("td");
+            let divm2 = document.createElement("div");
+            divm2.setAttribute("id", "td2");
+            let minus = document.createElement("button");
+            minus.addEventListener("click", function () {
+                reducing(elem);
+
+                if (elem.quantity >= 1) {
+                    squantity.innerText = elem.quantity;
+                    p.innerText = "₹" + elem.price * elem.quantity;
+
+
+                } else {
+                    squantity.innerText = 1;
+                }
+
+            });
+            minus.innerText = "-";
+            let squantity = document.createElement("span");
+            squantity.innerText = 1;
+            let plus = document.createElement("button");
+            plus.addEventListener("click", function () {
+                adding(elem);
+
+                if (elem.quantity > 1) {
+                    squantity.innerText = elem.quantity;
+                    p.innerText = "₹" + elem.price * elem.quantity;
+
+
+                } else {
+                    squantity.innerText = 1;
+                }
+
+            });
+            plus.innerText = "+";
+            let removed = document.createElement("button");
+            removed.setAttribute("id", "btn");
+            removed.innerText = "Remove";
+            removed.addEventListener("click", function () {
+                elemRemove(index);
+            });
+            divm2.append(minus, squantity, plus)
+            td2.append(divm2, removed);
+            // table data third ------->
+
+
+            let td3 = document.createElement("td");
+            let p = document.createElement("p");
+            td3.append(p);
+            p.innerText = "₹" + elem.price;
+
+            tr.append(td1, td2, td3);
+            document.querySelector("tbody").append(tr);
+        });
+
+
+    }
+    data.map(function (element) {
+        total += element.price;
+    });
+
+    function reducing(elem) {
+
+        event.preventDefault();
+        for (let i = 0; i < data.length; i++) {
+            if (elem == data[i] && elem.quantity > 1) {
+                elem.quantity--;
+                total -= elem.price;
+                document.querySelector("#total").innerHTML = "₹" + total;
+            }
+        }
+
+    }
+    function adding(elem) {
+        event.preventDefault();
+        for (let i = 0; i < data.length; i++) {
+            if (elem == data[i]) {
+                elem.quantity++;
+                total += elem.price;
+                document.querySelector("#total").innerHTML = "₹" + total;
+            }
+        }
+
+    }
+    function elemRemove(index) {
+        event.preventDefault();
+        data.splice(index, 1);
+        localStorage.setItem('cartLSS', JSON.stringify(data));
+        displayCart(data);
+        window.location.href = 'cart.html';
+    }
+    // checkout all item price total
+    document.querySelector("#total").innerHTML = "₹" + total;
+    document.querySelector('#payment').addEventListener('click', goToPayment);
+    function goToPayment() {
+        window.location.href = 'payment_page.html';
+    }
+</script>

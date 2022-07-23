@@ -2,38 +2,38 @@
     width: 90%;
     height: 80px;
     margin: auto;
-    border: 1px solid black;
 }
 
 #mcart>h1 {
-    font-family: sans-serif;
-    margin-top: 15px;
+    font-family: 'Roboto Condensed';
+    margin-top: 16px;
 }
 
 #your {
     width: 90%;
     height: 550px;
     margin: auto;
-    border: 1px solid black;
     display: flex;
     justify-content: space-between;
     background-color: #F8F7F5;
+    margin-top: 60px;
 }
 
 #faq {
-    width: 90%;
+    width: 85%;
     height: 600px;
     margin: auto;
-    border: 1px solid black;
     display: flex;
     justify-content: space-between;
-    font-family: sans-serif;
+    font-family: 'Roboto Condensed';
+    margin-top: 150px;
+    margin-bottom: 50px;
 }
 
 #yleft {
     width: 40%;
     height: 100%;
-    font-family: sans-serif;
+    font-family: 'Roboto Condensed';
     font-size: 30px;
     text-align: left;
     margin-left: 10%;
@@ -64,13 +64,11 @@
 #fleft {
     width: 40%;
     height: 100%;
-    border: 1px solid black;
 }
 
 #fright {
     width: 50%;
     height: 100%;
-    border: 1px solid black;
 }
 
 hr {
@@ -81,15 +79,48 @@ hr {
 }
 
 #fleft>div {
-    width: 78%;
-    border: 1px solid black;
+    width: 90%;
     display: flex;
     align-items: baseline;
     margin: auto;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-top: 27px;
+    margin-bottom: 27px;
 }
 
 #fleft>div>img {
     width: 8px;
     height: 8px;
+}
 
+#fq {
+    width: 180px;
+    height: 50px;
+    font-family: 'Roboto Condensed';
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 50px;
+    background-color: transparent;
+    margin-top: 25px;
+}
+
+#rb>button {
+    padding: 0px 60px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Roboto Condensed';
+    gap: 10px;
+}
+
+#rb {
+    margin-top: 22px;
+    display: flex;
+    width: 72%;
+    justify-content: space-between;
 }

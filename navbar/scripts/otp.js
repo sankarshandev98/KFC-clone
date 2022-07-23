@@ -2,11 +2,17 @@ let x=document.getElementById("timer")
 function counter(){
     let i=50 
     setInterval(function () {
-        i=i-1
-
+//         i=i-1
+         if(i>0)
+        {
+            i=i-1
+        }
+        else{
+            alert("time is out")
+        }
     x.innerText=i
 
-},2000);
+},1000);
 }
 counter()
 

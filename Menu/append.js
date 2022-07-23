@@ -58,9 +58,78 @@ let appendData = (wherAppend,data)=>{
         wherAppend.append(mainDiv)
     })
 }
+
+
+let searchData = (wherAppend,data)=>{
+  let mainDiv = document.createElement("div")
+  let avtar = document.createElement("img")
+  avtar.src = data.img
+  let name = document.createElement("h2")
+  name.innerText = data.name
+
+  // div - 2 
+
+  let nonVagdiv = document.createElement("div")
+  nonVagdiv.setAttribute("class","nonVagDiv2")
+  let NonVegIcon = document.createElement("img")
+  NonVegIcon.src = data.NonVegIcon
+  let vegOrNonVeg = document.createElement("p")
+  vegOrNonVeg.innerText = data.vegOrNonVeg
+  let li = document.createElement("li")
+  let serves = document.createElement("p")
+  serves.innerText = data.Serves
+  if(data.Serves ==="")
+  {
+    nonVagdiv.append(NonVegIcon,vegOrNonVeg,serves)
+  }
+  else
+  {
+    nonVagdiv.append(NonVegIcon,vegOrNonVeg,li,serves)
+  }
+
+  // div - 3 
+
+  let priceDiv = document.createElement("div")
+  priceDiv.setAttribute("class","price")
+  let availableprice = document.createElement("p")
+  availableprice.innerText = `₹${data.availableprice}`
+  availableprice.style.color = "#202124"
+  priceDiv.append(availableprice)
+
+  let description = document.createElement("p")
+  description.innerText = data.description 
+
+  // div - 4 
+  let addCartDiv = document.createElement("div")
+  addCartDiv.setAttribute("class","addToCart2")
+
+  let addtocart = document.createElement("button")
+  let addimg = document.createElement("img")
+  addimg.src = "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
+  addtocart.innerText = "Add to Cart"
+  
+  addCartDiv.addEventListener("click",()=>{
+    addDatalocalStorage(data)
+  })
+  addCartDiv.append(addtocart,addimg)
+
+  mainDiv.append(avtar,name,nonVagdiv,priceDiv,description,addCartDiv)
+  wherAppend.append(mainDiv)
+}
 let addDatalocalStorage = (data)=>{
     let kfcCart = JSON.parse(localStorage.getItem("kfc_cart")) || []
-    kfcCart.push(data)
-    localStorage.setItem("kfc_cart",JSON.stringify(kfcCart))
+    kfcCart.forEach(ele =>{
+      if(ele.name === data.name)
+      {
+        alert("ok")
+        console.log(ele.name);
+      }
+      else
+      {
+        kfcCart.push(data)
+        localStorage.setItem("kfc_cart",JSON.stringify(kfcCart))
+      }
+    })
+   
   }
-export default appendData
+export {appendData,searchData}

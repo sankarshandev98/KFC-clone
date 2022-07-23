@@ -3,7 +3,7 @@
     padding: 100px 100px;  
     text-align: justify; 
     color: white;
-    font-family:"Roboto Condensed"; 
+    font-family:Arial, Helvetica, sans-serif; 
      margin-top: 50px;   
 }
 
@@ -34,9 +34,10 @@ li:hover {
 }
 
 ul>p {
-    font-size: 14px;
-    margin-left: 30px; 
-    margin-bottom: 10px;
+    font-size: 15px;
+     margin-left: 22px;  
+    margin-bottom: 15px; 
+    color: white;
 }
 a{
     text-decoration: none;
@@ -51,12 +52,14 @@ a{
     gap: 20px;
 }
 
-#lastbox4 {
+/* #lastbox4 {
     display: flex;
     margin-top: 60px; 
     margin-left: 250px;
 }
-
+#lastbox4>div>p{
+    color: white;
+} */
 
 
 

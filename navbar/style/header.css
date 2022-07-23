@@ -2,8 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Roboto Condensed";
-
 }
 
 header {
@@ -11,7 +9,6 @@ header {
     /* position: sticky; */
     top: 0;
     background-color: white;
-    /* font-family: "Roboto Condensed"; */
 }
 
 nav {
@@ -32,6 +29,8 @@ nav {
 
 .img_align{
     height: 40px;
+    vertical-align: middle;
+
 }
 
 .box2 {

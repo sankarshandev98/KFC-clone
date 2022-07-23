@@ -8,6 +8,7 @@
     <link rel="icon"  href="https://imgs.search.brave.com/6S1AWiLxtAB4sJx--5Mi007xoylFUxHFxJ3hrUSE_HE/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC54/bkJza2tMVzRKd1Zp/N1FYN3ZjeFd3SGFI/YSZwaWQ9QXBp" >
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Condensed">
     <link rel="stylesheet" href="./dealsstyle/deals.css">
+    <link rel="stylesheet" href="./dealsstyle/popup.css">
 </head>
 <style>
   
@@ -46,7 +47,7 @@
             alt="">
             <h3 class="storetext">Select a KFC to see local Offers</h3>
             <div class="storebtn ">
-                <button class="store-btn" role="button">
+                <button class="store-btn" role="submit"onclick="popup()">
                     Find a KFC
                 </button>
             </div>
@@ -70,8 +71,8 @@
                 1Pc free Chicken Zinger on a cart value of 399 or above on first order. only for registered users.
             </div>
             <div class="button">
-                <a href="#"><div class="readit">View Details</div></a>
-                <a href="#"><button>Redeem</button> </a>
+                <a href="#"><div class="readit" type="submit" onclick="chickenzinger()">View Details</div></a>
+                <a href="#"><buttontype="submit" onclick="popup()">Redeem</buttontype=> </a>
             </div>
         </div>
         <div class="master">
@@ -85,8 +86,8 @@
             1 Pc Free Veg Zinger on a cart value of 399 or above on first order. Only for registered user
         </div>
         <div class="button">
-            <a href="#"><div class="readit">View Details</div></a>
-            <a href="#"><button>Redeem</button> </a>
+            <a href="#"><div class="readit" type="submit" onclick="vegzinger()">View Details</div></a>
+            <a href="#"><button type="submit" onclick="popup()">Redeem</button> </a>
         </div>
          </div>
         
@@ -101,8 +102,8 @@
        Add 2 Pc Hot n Crispy Chicken @ just Rs 99 on min cart value of Rs 499 or more. Applicable on 2nd & 3rd order for signed in user.
    </div>
    <div class="button">
-       <a href="#"><div class="readit">View Details</div></a>
-       <a href="#"><button>Redeem</button> </a>
+       <a href="#"><div class="readit" type="submit" onclick="crispy()">View Details</div></a>
+       <a href="#"><button type="submit" onclick="popup()">Redeem</button> </a>
    </div>
         </div>
         <div class="master">
@@ -116,14 +117,195 @@
     Upto Rs 100 off on min cart value of Rs 599 or more. Applicable on 4th order onwards for signed in user.
 </div>
 <div class="button">
-    <a href="#"><div class="readit">View Details</div></a>
-    <a href="#"><button>Redeem</button> </a>
+    <a href="#"><div class="readit"type="submit"onclick="off()">View Details</div></a>
+    <a href="#"><button type="submit" onclick="popup()">Redeem</button> </a>
 </div>
         </div>
      </div>
     <!-- grid pattern End -->
+     <!-- popup item  start-->
+    <!-- order popup start -->
+    <div class="order-pop">
+        <div class="ph">
+         <h1>START YOUR ORDER</h1>
+         <Button type="button" onclick="closepopup()">
+             <img src="https://online.kfc.co.in/static/media/PopupCloseBtn.ee8133ae.svg" alt="cross">
+                 
+         </Button>
+        </div>
+        <br>
+        <div class="pm">
+         <h2>HOW WOULD YOU LIKE TO RECEIVE YOUR ORDER?</h2>
+         <div id="totalbutton">
+             <button class="pickup"> Pick up</button>
+             <br>
+             <button class="dinein">Dine In</button>
+            <br>
+            <button class="delivery">Delivery</button>
+         </div> 
+     </div>
+         
+     </div>
+     <!-- order popup End -->
+     <!-- crispy popup start -->
+     <div class="crispy-pop">
+        <div class="ph">
+         <h1>Offer</h1>
+         <Button type="button" onclick="closecrispy()">
+             <img src="https://online.kfc.co.in/static/media/PopupCloseBtn.ee8133ae.svg" alt="cross">
+                 
+         </Button>
+        </div>
+        <br>
+        <div class="pm">
+         <h2>Add 2 Pc Hot n Crispy Chicken @ just 99 on min cart value of Rs. 499 or more. Applicable on 2nd & 3rd order for signed in user</h2>
+         <div id="totalbutton">
+             <h6 class="pickup1"> Valid to 01/01/30</h6>
+             <br>
+             <h6 class="dinein1">Add 2 Pc Hot n Crispy Chicken @ just 99 on min cart value of Rs. 499 or more. Applicable on 2nd & 3rd order for signed in user</h6>
+            <br>
+            <button class="delivery1">Redeem</button>
+         </div> 
+     </div>
+         
+     </div>
+     <!-- crispy popup End -->
+     <!-- veg zinger popup start -->
+     <div class="vegzinger-pop">
+        <div class="ph">
+         <h1>Offer</h1>
+         <Button type="button" onclick="closevegzinger()">
+             <img src="https://online.kfc.co.in/static/media/PopupCloseBtn.ee8133ae.svg" alt="cross">
+                 
+         </Button>
+        </div>
+        <br>
+        <div class="pm">
+         <h2>1 PC FREE VEG ZINGER ON A CART VALUE OF 399 OR ABOVE ON FIRST ORDER. ONLY FOR REGISTERED USERS.</h2>
+         <div id="totalbutton">
+             <h6 class="pickup1"> Valid to 31/12/30</h6>
+             <br>
+             <h6 class="dinein1">1 Pc free Veg Zinger on a cart value of 399 or above on first order. Only for registered users.</h6>
+            <br>
+            <button class="delivery1">Redeem</button>
+         </div> 
+     </div>
+         
+     </div>
+     <!-- veg zinger popup end -->
+     <!-- chicken zinger popup start -->
+     <div class="chickenzinger-pop">
+        <div class="ph">
+         <h1>Offer</h1>
+         
+         <Button type="button" onclick="closechickenzinger()">
+             <img src="https://online.kfc.co.in/static/media/PopupCloseBtn.ee8133ae.svg" alt="cross">
+                 
+         </Button>
+        </div>
+        <br>
+        <div class="pm">
+         <h2>1 PC FREE CHICKEN ZINGER ON A CART VALUE OF 399 OR ABOVE ON FIRST ORDER. ONLY FOR REGISTERED USERS.</h2>
+         <div id="totalbutton">
+             <h6 class="pickup1"> Valid to 31/12/30</h6>
+             <br>
+             <h6 class="dinein1">1 Pc free Chicken Zinger on a cart value of 399 or above on first order. Only for registered users.</h6>
+            <br>
+            <button class="delivery1">Redeem</button>
+         </div> 
+     </div>
+         
+     </div>
+     <!-- chicken zinger popup end -->
+     <!-- offer popup start -->
+     <div class="offer-pop">
+        <div class="ph">
+         <h1>Offer</h1>
+         <Button type="button" onclick="closeoff()">
+             <img src="https://online.kfc.co.in/static/media/PopupCloseBtn.ee8133ae.svg" alt="cross">
+                 
+         </Button>
+        </div>
+        <br>
+        <div class="pm">
+         <h2>Upto Rs 100 off on min cart value of Rs 599 or more . Applicable on 4th order onwards for signed in user.</h2>
+         <div id="totalbutton">
+             <h6 class="pickup1"> Valid to 01/01/23</h6>
+             <br>
+             <h6 class="dinein1">Upto Rs 100 off on min cart value of Rs 599 or more . Applicable on 4th order onwards for signed in user.</h6>
+            <br>
+            <button class="delivery1">Redeem</button>
+         </div> 
+     </div>
+         
+     </div>
+     <!-- offer popup end -->
+    <!-- popup item  End-->
+
     <!-- fotter started -->
     <div id="footer"></div>
     <!-- fotter ended -->
 </body>
 </html>
+<script>
+    let order_popup=document.querySelector(".order-pop");
+    // let data=document.querySelector("`#");
+    function popup(){
+      
+        order_popup.classList.add("open-popup");  
+        console.log("tripathiji");
+      
+    }
+    function closepopup(){
+       
+        order_popup.classList.remove("open-popup");  
+    }
+    let offer_pop=document.querySelector(".offer-pop");
+    // let data=document.querySelector("`#");
+    function off(){
+      
+        offer_pop.classList.add("open-popup");  
+        console.log("tripathiji");
+      
+    }
+    function closeoff(){
+       
+        offer_pop.classList.remove("open-popup");  
+    }
+    let chickenzinger_pop=document.querySelector(".chickenzinger-pop");
+    // let data=document.querySelector("`#");
+    function chickenzinger(){
+      
+        chickenzinger_pop.classList.add("open-popup");  
+        console.log("tripathiji");
+      
+    }
+    function closechickenzinger(){
+       
+        chickenzinger_pop.classList.remove("open-popup");  
+    }
+    let vegzinger_pop=document.querySelector(".vegzinger-pop");
+    // let data=document.querySelector("`#");
+    function vegzinger(){
+      
+        vegzinger_pop.classList.add("open-popup");  
+        console.log("tripathiji");
+      
+    }
+    function closevegzinger(){
+       
+        vegzinger_pop.classList.remove("open-popup");  
+    }
+    let crispy_pop=document.querySelector(".crispy-pop");
+    // let data=document.querySelector("`#");
+    function crispy(){
+      
+        crispy_pop.classList.add("open-popup");  
+        console.log("tripathiji");
+      
+    }
+    function closecrispy(){
+       
+        crispy_pop.classList.remove("open-popup");  
+    }
+ </script>

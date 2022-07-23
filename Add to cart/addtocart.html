@@ -349,8 +349,10 @@
             cddetailsinnerdiv.append(Veg_dot_Icon, vegNonVeg);
             let anchor = document.createElement('anchor');
             anchor.setAttribute('id', 'anc');
-            anchor.innerText = 'Remove All';
-            // addeventlistener
+            anchor.innerText = 'Remove';
+            anchor.addEventListener("click", function () {
+                elemRemove(index);
+            });
             cddetailsdiv.append(name, cddetailsinnerdiv, anchor);
             let counterdiv = document.createElement('div');
             counterdiv.setAttribute('id', 'counter');
@@ -391,7 +393,38 @@
             carddiv.append(cdimgdiv, cddetailsdiv, counterdiv, pricediv);
             cardd.append(carddiv);
             document.getElementById('left').append(cardd);
-        })
+        });
     }
-    append(data);
+    data.map(function (element) {
+        total += element.price;
+    });
+
+    function reducing(elem) {
+        event.preventDefault();
+        for (let i = 0; i < data.length; i++) {
+            if (elem == data[i] && elem.quantity > 1) {
+                elem.quantity--;
+                total -= elem.price;
+                document.querySelector("#price").innerHTML = "₹" + total;
+            }
+        }
+
+    }
+    function adding(elem) {
+        event.preventDefault();
+        for (let i = 0; i < data.length; i++) {
+            if (elem == data[i]) {
+                elem.quantity++;
+                total += elem.price;
+                document.querySelector("#price").innerHTML = "₹" + total;
+            }
+        }
+
+    }
+    function elemRemove(index) {
+        event.preventDefault();
+        data.splice(index, 1);
+        localStorage.setItem('cartLSS', JSON.stringify(data));
+        append(data);
+    }
 </script>

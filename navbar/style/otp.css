@@ -1,0 +1,119 @@
+
+#otp{
+/* border: 1px solid black; */
+height: 400px;
+width: 30%;
+margin: auto; 
+/* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  */
+margin-top:10px ; 
+
+}
+#otp>div{
+margin-left: 12%;
+margin-top: 5%; 
+}
+#otp1 {
+/* height: 25px;
+width: 40%; 
+margin-left: 30%;
+border-radius: 0%;
+/* margin-bottom: 20px;  */
+/* background-color: rgb(219, 219, 219); */
+/* color: #000000; */
+/* cursor: not-allowed; */
+/* margin-left: 40%; */ 
+height: 44px;
+padding: 10px 40px; 
+color: #ffffff;
+font-size: 13px;
+background-color: #202124;
+border: none;
+outline: none;
+border-radius: 200px;
+cursor: pointer;
+/* margin-top: 5px; */
+margin-left: 120px;
+
+}
+#otp2{
+margin-left: 10%;
+}
+#otp3{
+    /* font-family: 'National2-Medium'; */
+    display: flex;
+    color: #494949;
+    background: none;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    margin-left: 55px;
+}
+
+#otp6{
+text-align: center;
+    margin: auto;
+    display: block;
+    color: #494949;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'National2-Medium';
+    margin-bottom: 7%;
+}
+#otp4{
+/* margin-left: 15%;
+height: 25px; */
+width: 100%;
+margin: 0 auto;
+border: none;
+border-bottom: 2px solid #494949;
+outline: none;
+text-align: center;
+font-family: 'National2CondensedWeb-Medium';
+font-style: normal;
+font-weight: bold;
+font-size: 22px;
+line-height: 44px;
+text-align: center;
+text-transform: uppercase;
+color: #202124;
+}
+#otp5{
+margin-left: 25%;
+color: red;
+}
+
+.img_align{
+    /* margin-left: 180px; 
+    height: 30px;
+    margin-top: 20px; */
+
+   /* width: 30%; */
+   text-align: center;
+   margin: 8% auto;
+   display: block;
+   cursor: pointer;
+   height: 27px;
+}  
+h2{
+    text-align: center;
+    font-family: 'National2CondensedWeb-Medium';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #202124;
+    margin-bottom: 7%;
+}
+#timer{
+    margin-left: 5px;
+}

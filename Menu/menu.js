@@ -1,4 +1,4 @@
-import appendData from "./append.js"
+import {appendData,searchData} from "./append.js"
 let  section = document.querySelectorAll("section");
 const nevItems = document.querySelectorAll("#ap_menu_side_bar ul li");
 
@@ -176,5 +176,35 @@ let addDatalocalStorage = (data)=>{
   kfcCart.push(data)
   localStorage.setItem("kfc_cart",JSON.stringify(kfcCart))
 }
+let getData = ()=>{
+  let ap_search = document.getElementById("ap_search").value
+  for(let key in menu)
+  {
+  //  console.log(menu[key]);
+   for(let i = 0;i<menu[key].length;i++)
+   {
+    if(menu[key][i].name == ap_search)
+    {
+      let searchDat = menu[key][i];
+      let ap_section = document.getElementById('ap_section')
+      ap_section.innerHTML = null
+      searchData(ap_section,searchDat)
+    }
+   }
+  }
 
-main()
+}
+  let ap_search = document.getElementById("ap_search")
+  ap_search.addEventListener("change",getData)
+
+  let preloading=document.querySelector(".chickenload");
+  function chicken(){
+   preloading.style.display="none";
+  }
+  let deal = ()=>{
+    setTimeout(() => {
+      chicken()
+      main()
+    },5000);
+  }
+  window.onload=deal();

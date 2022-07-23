@@ -6,17 +6,33 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+.chickenload {
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.8) url("https://online.kfc.co.in/KFC_Loader_Gif.gif") no-repeat center;
+    position: fixed;
+    z-index: 90000;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
-#nvbar {
-    width: 85%;
-    margin: auto;
-    border: 1px solid red;
-    height: 100px;
-    position: fixed;
+header {
     top: 0;
+    background: #fff;
+    height: 100px;
+    z-index: 9999;
+    top: 0;
+    border: 1px solid red;
+    position: -webkit-sticky;
+
+}
+
+#nvbar {
+    top: 0;
+    border: 1px solid red;
+    position: fixed;
 }
 
 /********** main div *************/
@@ -78,6 +94,7 @@ html {
 /********* right menu data **********/
 #ap_menu_append {
     width: 100%;
+    position: relative;
     /* border: 1px solid red; */
     /* background-color: #494949; */
 }
@@ -117,17 +134,20 @@ html {
 section {
     width: 100%;
     /* height: 100vh; */
-    margin-top: 50px;
+
+    /* margin-top: 50px; */
+    padding-top: 100px;
 }
 
 section>h1 {
     font-size: 2rem;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 #Chicken_Buckets {
     background-color: #f8f7f5;
-    margin-top: 100px;
+
 }
 
 /* append Data - 1  */
@@ -159,7 +179,8 @@ section>h1 {
 #ap_Burgers>div>h2,
 #ap_Stay_Home_Specials>div>h2,
 #ap_Snacks>div>h2,
-#ap_beverages>div>h2 {
+#ap_beverages>div>h2,
+#ap_section>div>h2 {
     font-size: 15px;
     font-weight: 700;
 }
@@ -171,7 +192,8 @@ section>h1 {
 #ap_Burgers>div>p,
 #ap_Stay_Home_Specials>div>p,
 #ap_Snacks>div>p,
-#ap_beverages>div>p {
+#ap_beverages>div>p,
+#ap_section>div>p {
     font-weight: 400;
     font-size: 11px;
     line-height: 22px;
@@ -281,12 +303,18 @@ section>h1 {
 #ap_Burgers>div>img,
 #ap_Stay_Home_Specials>div>img,
 #ap_Snacks>div>img,
-#ap_beverages>div>img {
+#ap_beverages>div>img,
+#ap_section>div>img {
     width: 100%;
     border-radius: 5.61px 5.61px 0px 0px;
     height: 210px;
     margin-bottom: 10px;
 }
+
+#ap_section>div {
+    width: 30%;
+}
+
 
 #ap_New_Launch>div>h2,
 #ap_New_Launch>div>p,
@@ -308,7 +336,10 @@ section>h1 {
 #ap_Snacks .price,
 #ap_beverages>div>h2,
 #ap_beverages>div>p,
-#ap_beverages .price {
+#ap_beverages .price,
+#ap_section>div>h2,
+#ap_section>div>p,
+#ap_section .price {
     padding-left: 20px;
 }
 
@@ -317,8 +348,7 @@ section>h1 {
 #ap_Box_Meals>div>p,
 #ap_Burgers>div>p,
 #ap_Stay_Home_Specials>div>p,
-#ap_Snacks>div>p,
-#ap_beverages>div>p {
+#ap_Snacks>div>p {
     font-weight: 400;
     font-size: 14px;
 }
@@ -328,7 +358,7 @@ section>h1 {
     width: 100%;
     display: flex;
     gap: 5px;
-    /* justify-content: space-around; */
+
     margin-top: 10px;
     padding-left: 20px;
 

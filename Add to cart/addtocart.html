@@ -327,7 +327,8 @@
 
 <script>
     let data = JSON.parse(localStorage.getItem('cart-page')) || [];
-    let total = 0;
+    let total = 1;
+    let count = 1;
     function append(data) {
         document.getElementById('lefts').innerHTML = "";
         data.map(function (elem, index) {
@@ -377,6 +378,7 @@
                     numspan.innerText = 1;
                 }
             });
+
             let inner_minus_span = document.createElement('span');
             minus_span.append(inner_minus_span);
             let numspan = document.createElement('span');
@@ -442,10 +444,7 @@
     }
     document.querySelector("#all").addEventListener("click", allRemove);
     function allRemove() {
-        let datas = data.map((elem, index) => {
-            data.splice(index, 1);
-        });
-        localStorage.setItem('cart-page', JSON.stringify(data));
+        localStorage.removeItem('cart-page', JSON.stringify(data));
         append(data);
     }
 
@@ -454,6 +453,9 @@
 
     document.getElementById('check').addEventListener('click', goToCheckout);
     function goToCheckout() {
+        let totaldata = [];
+        let totalprice = document.getElementById('ctotal').innerHTML;
+        console.log(totalprice);
         localStorage.setItem('checkout-page', JSON.stringify(data));
         window.location.href = 'checkout.html';
     }

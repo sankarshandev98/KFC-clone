@@ -3,6 +3,13 @@
     padding: 0;
     font-family:"Roboto Condensed" ;
 }
+.chickenload{
+width: 100%;
+height: 100vh;
+background: #fff url("https://online.kfc.co.in/KFC_Loader_Gif.gif" ) no-repeat center;
+position: fixed;
+z-index: 9000;
+}
 .mainslider{
     width: 100%;
     /* border: 1px solid red; */
@@ -41,18 +48,24 @@ margin-bottom:2.5rem ;
 letter-spacing: 1px;
 
 }
+
+
 #delivery{
+       
     background-color:#202124;
     color: #fff;
     padding: 5px 10px;
-    text-align: center;
+   
     box-sizing: border-box;
-
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 1%;
 }
-h3 button{
+#delivery button{
     background: #e4002b;
     color: #fff;
-    padding: 7px 10px;
+    padding: 10px 15px;
     border-radius: 15px;
     border: none;
     
@@ -157,6 +170,7 @@ h3 button:hover{
     text-transform: uppercase;
     color: #202124;
     bottom: 7%;
+    margin-top: 10px;
 }
 #offer{
     margin-top: 90px;
@@ -175,9 +189,9 @@ svg{
 
  } 
 .stripes1 {
-    width: 40px;
-    height: 20px;
-    background: repeating-linear-gradient(90deg,#e4002b,#e4002b 8px,#202124 0,#202124 16px);
+    width: 120px;
+    height: 50px;
+    background: repeating-linear-gradient(90deg,#e4002b,#e4002b 20px,#202124 0,#202124 50px);
     margin-left: 5%;
     margin-bottom: 5%;
 }
@@ -186,7 +200,9 @@ svg{
     grid-template-columns: repeat(2,1fr);
     box-sizing: border-box;
     padding: 50px;
-    justify-content: space-around;
+    justify-content: space-between; 
+    
+    
 }
 .greeting-heading1 button{
     background-color: #202124;
@@ -201,6 +217,7 @@ svg{
     font-size: 20px;
 }
 .greeting-heading1 a{
+    width: 100%;
     background-color: #202124;
     color: #fff;
     border: none;
@@ -209,10 +226,11 @@ svg{
     align-items: center;
     margin-right: -50%;
     margin-top: 5%;
-    justify-content: center;
+    justify-content: end;
     font-weight: 200;
     font-size: 20px;
     text-decoration: none;
+    
 }
  .greeting-heading1 div{
     font-family: "National 2 Condensed"; 
@@ -342,3 +360,114 @@ svg{
     color: white;
     cursor: pointer;
 }
+@media all and (min-width:324px) and (max-width:1023px) {
+    #delivery{
+        width: 100%;
+        display:grid;
+        grid-template-rows: repeat(2,1fr);
+        
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    /* #deals{
+    width: 100%;
+    
+   }
+   #deals h2{
+    font-size:xx-large;
+    font-weight: bold;
+   } */
+
+   #pastorder{
+    background: #f8f7f5;
+    /* display: flex; */
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.stripes {
+  
+    width: 45px;
+    height: 200x;
+    background: repeating-linear-gradient(90deg,#e4002b,#e4002b 8px,#fff 0,#fff 16px);
+    margin: auto;
+
+}
+#menu{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-evenly;
+    gap: 20px;
+    text-align: center;
+}
+.menutext{
+    text-align: center;
+    
+    
+    font-weight:bolder;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: .5px;
+    
+    color: #202124;
+    bottom: 7%;
+    margin-top: 10px;
+}
+.stripes1 {
+    
+    margin: auto;
+}
+.greeting-heading1{
+    /* display: grid;
+    grid-template-columns: repeat(1,1fr);
+    box-sizing: border-box;
+    padding: 50px;
+    justify-content: space-around; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+}
+.greeting-heading1 button{
+    /* background-color: #202124;
+    color: #fff;
+    border: none;
+    display: block;
+    gap: 10px;
+    align-items: center;
+    
+    justify-content: center;
+    font-weight: 200;
+    font-size: 20px; */
+    text-align: center;
+    
+    margin-right:5px;
+}
+.greeting-heading1 a{
+    background-color: #202124;
+    color: #fff;
+    border: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-right: -50%;
+    margin-top: 5%;
+    justify-content: center;
+    font-weight: 200;
+    font-size: 20px;
+    text-decoration: none;
+}
+ .greeting-heading1 div{
+    font-family: "National 2 Condensed"; 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 29.71px;
+} 
+   }

@@ -13,3 +13,14 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+  let preloading=document.querySelector(".chickenload");
+  function chicken(){
+   preloading.style.display="none";
+  }
+  let deal = ()=>{
+    setTimeout(() => {
+      chicken();
+    
+    },3000);
+  }
+  window.onload=deal();

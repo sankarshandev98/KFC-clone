@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     /* font-family: Roboto Condensed; */
+    font-family: "National 2 Condensed";
 }
 #delivery{
    
@@ -45,7 +46,7 @@ display: flex;
 background-image: url("https://online.kfc.co.in/static/media/offer_deals_banner.777f20e1.svg");
 }
 #deals h2{
-font-family: "National 2 Condensed";
+
 color: #fff;
 font-style: normal;
 font-weight: 700;
@@ -103,7 +104,7 @@ margin-top: 45.71px;
 
 .master{
 
-font-family: "National 2 Regular";
+
 background: #fff;
 box-shadow: 0 4px 7px rgb(0 0 0 / 10%);
 border-radius: 8px;
@@ -226,7 +227,7 @@ margin-left: 0px;
 }
 .content-text{   
  height: 48px;
-font-family: "National 2 Regular";
+
 font-weight: 400;
 font-size: 14px;
 color: #202124;

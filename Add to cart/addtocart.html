@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" href="https://imgs.search.brave.com/6S1AWiLxtAB4sJx--5Mi007xoylFUxHFxJ3hrUSE_HE/rs:fit:474:225:1/g:ce/aHR0cHM6Ly9
+        0c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC54/bkJza2tMVzRKd1Zp/N1FYN3ZjeFd3SGFI/YSZwaWQ9QXBp">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Condensed">
     <style>
         * {
@@ -278,10 +280,21 @@
             width: 70%;
             height: 70%;
         }
+
+        .chickenload {
+            width: 100%;
+            height: 100vh;
+            margin: auto;
+            background: #fff url("https://online.kfc.co.in/KFC_Loader_Gif.gif") no-repeat center;
+            position: fixed;
+            z-index: 9000;
+        }
     </style>
 </head>
 
 <body>
+    <div class="chickenload">
+    </div>
     <div id="left">
         <div id="lefts"></div>
         <div id="down">
@@ -453,10 +466,28 @@
 
     document.getElementById('check').addEventListener('click', goToCheckout);
     function goToCheckout() {
-        let totaldata = [];
         let totalprice = document.getElementById('ctotal').innerHTML;
-        console.log(totalprice);
-        localStorage.setItem('checkout-page', JSON.stringify(data));
+        localStorage.setItem('totalprice', JSON.stringify(totalprice));
         window.location.href = 'checkout.html';
     }
+
+    function totals() {
+        let totalitem = 0;
+        data.map((elem) => {
+            totalitem += elem.quantity;
+        })
+        document.querySelector("#quan").innerHTML = totalitem + " " + "ITEMS";
+    }
+    totals();
+    let preloading = document.querySelector(".chickenload");
+    function chicken() {
+        preloading.style.display = "none";
+    }
+    let deal = () => {
+        setTimeout(() => {
+            chicken();
+            append(data);
+        }, 2000);
+    }
+    window.onload = deal();
 </script>

@@ -24,9 +24,31 @@ counter()
 
 let submit=()=>{
     let otp=document.getElementById("otp4").value
+    var data = JSON.parse(localStorage.getItem("data"));
+    var number = JSON.parse(localStorage.getItem("signin"));
+    console.log("data:",data)
+    console.log("number:",number)
+
+    let login= [];
+
     if(otp!=1234){
-        window.location.href="index.html"
-       
+       let arr = data.filter(element => {
+              return element.cont==number
+        });
+        console.log("arr", arr)
+        if(arr.length>0)
+        {
+          login.push(1)
+          localStorage.setItem("checklogin",JSON.stringify(login))
+           window.location.href="header.html" 
+        //    window.location.href="signmid.html" 
+
+        
+
+        }
+        else if (arr.length==0){
+        window.location.href="signmid.html"
+        }
         // console.log(otp)
     }else{
         window.location.href="signin.html"

@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+      
+      body{
+        color: rgb(32,33,36);
+    }
+    #sign11{
+       /* border: 1px solid black;  */
+       width:500px; 
+       margin: auto;
+       margin-top: 50px;
+       height: 450px;
+    
+    }
+   
+    #sig{
+        /* border: 1px solid red; */
+        margin: auto;
+        line-height: 35px;
+        /* border: 1px solid black; */
+        height: 500px;
+        width: 45%;
+    }
+    p {
+        text-align: center;
+        display: block;
+        color: #494949;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        font-family: 'National2-Medium';
+    }
+    #bu1{
+       
+        height: 44px;
+    padding: 10px 40px;
+    color: #ffffff;
+    font-size: 13px;
+    background-color: #202124;
+    border: none;
+    outline: none;
+    border-radius: 200px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 200px;
+    }
+    #b{
+       
+        width: 100%;
+        background: #ffffff;
+        color: #202124;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 30px;
+        align-items: center;
+        text-align: center;
+        outline: none;
+        border-radius: 66px;
+        border: 1px solid #202124;
+        font-family: 'National 2 Regular';
+        padding: 8px 40px;
+        cursor: pointer;
+    }
+  
+    #or{
+        margin-top: 10px;
+        margin-left: 25px;
+    }
+
+    #wel{
+        
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #202124;
+    /* margin-left: 10px; */
+    /* margin-bottom: 2%; */
+}
+#C{
+        
+        text-align: center;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: #202124;
+        margin-left: 20px; 
+        /* margin-bottom: 2%; */
+    }
+    h3{
+        
+        text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #202124;
+    margin-bottom: 7%;
+}
+h6{
+     font-style: normal; 
+     font-weight: normal; 
+    font-size: 15px;
+    line-height: 20px; 
+    margin-left: 180px;
+     color: #202124; 
+    }
+   
+     #name{ 
+        border: none;
+        text-align: left;
+        width: 90%;
+        border: none;
+        border-bottom: 1px solid #202124;
+        outline: none;
+        font-family: 'National 2 Regular';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: -0.1px;
+        color: #202124;
+        padding-bottom: 0.7%;
+        margin-left: 20px;
+    } 
+    #email{ 
+        border: none;
+        text-align: left;
+        width: 90%;
+        border: none;
+        border-bottom: 1px solid #202124;
+        outline: none;
+        font-family: 'National 2 Regular';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: -0.1px;
+        color: #202124;
+        padding-bottom: 0.7%;
+        margin-top: 20px;
+        margin-left: 20px;
+
+    } 
+</style>
+
+<body>
+    <div id="sig">
+        <div id="sign11">
+           <div> <p>Sign In / Sign up</p></div>
+           <div><h2 id="wel" >WELCOME,</h2> </div>
+           <div> <h2 id="C"> THANK YOU FOR BEING WITH US!</h2></div>
+            <div> <h6>Please let us know you more.</h6></div>
+            <div ><input id="name" type="text"  placeholder="First Name"></div>
+            <div ><input id="email" type="text"  placeholder="Email Address"></div>
+            <div ><button id="bu1" onclick="sig_in()">Send me </button></div>
+            <div><p id="or">Or</p></div>
+            <div><button onclick="sign_in1()" id="b">Skip, Ask me later</button></div>
+         </div> 
+    </div>
+</body>
+</html>
+
+<script>
+     let arr=JSON.parse(localStorage.getItem("data"))||[];
+    //  let contact=JSON.parse(localStorage.getItem(signin))||[];
+    function sig_in(){
+        let contact=JSON.parse(localStorage.getItem("signin"))||[];
+        let obj={
+            cont:contact,
+            name:document.getElementById("name").value,
+            email:document.getElementById("email").value
+        }
+        arr.push(obj);
+        console.log(obj);
+        //  name.innerHTML = "HELLO" + name;
+        localStorage.setItem("data",JSON.stringify(arr));
+        window.location.href="index.html"
+
+    }
+    
+</script>
+

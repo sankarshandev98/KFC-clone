@@ -18,29 +18,12 @@ html {
     scroll-behavior: smooth;
 }
 
-header {
-    top: 0;
-    background: #fff;
-    height: 100px;
-    z-index: 9999;
-    top: 0;
-    border: 1px solid red;
-    position: -webkit-sticky;
-
-}
-
-#nvbar {
-    top: 0;
-    border: 1px solid red;
-    position: fixed;
-}
-
 /********** main div *************/
 #ap_menu_container {
     width: 85%;
     margin: auto;
     display: flex;
-    margin-top: 100px;
+    /* margin-top: 50px; */
 }
 
 /********* left menu items **********/
@@ -136,7 +119,7 @@ section {
     /* height: 100vh; */
 
     /* margin-top: 50px; */
-    padding-top: 100px;
+    padding-top: 115px;
 }
 
 section>h1 {

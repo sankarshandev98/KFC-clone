@@ -10,7 +10,7 @@
              window.location.href="otp.html"
     }
        function  sign_in1(){
-    window.location.href="index.html"
+    window.location.href="../landing_page/index.html"
        }
 
 

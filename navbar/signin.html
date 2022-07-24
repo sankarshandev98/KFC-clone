@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,35 +18,56 @@
     <div id="header"> </div>
     <div id="sign">
         <div id="sign1">
-           <div> <p>Sign In / Sign up</p></div>
-           <div> <img  class="img_align" src="https://photos.prnewswire.com/prnfull/20160205/330341LOGO" alt="chicken"></div>
-           <div> <h3>LET’S SIGN IN OR CREATE ACCOUNT WITH YOUR PHONE NUMBER!</h3></div>
-            <div ><input id="in" type="number"  placeholder="Phone Number"></div>
-            <div> <h6>By “logging in to KFC”, you agree to our Privacy Policy and Terms & Conditions.</h6></div>
-            <div ><button id="bu1" onclick="sign_in()">Send me a code</button></div>
-            <div><p id="or">Or</p></div>
+            <div>
+                <p>Sign In / Sign up</p>
+            </div>
+            <div> <img class="img_align" src="https://photos.prnewswire.com/prnfull/20160205/330341LOGO" alt="chicken">
+            </div>
+            <div>
+                <h3>LET’S SIGN IN OR CREATE ACCOUNT WITH YOUR PHONE NUMBER!</h3>
+            </div>
+            <div><input id="in" type="number" placeholder="Phone Number"></div>
+            <div>
+                <h6>By “logging in to KFC”, you agree to our Privacy Policy and Terms & Conditions.</h6>
+            </div>
+            <div><button id="bu1" onclick="sign_in()">Send me a code</button></div>
+            <div>
+                <p id="or">Or</p>
+            </div>
             <div><button onclick="sign_in1()" id="b">Skip, Continue as Guest</button></div>
-         </div> 
+        </div>
     </div>
- 
+
     <div id="footer"> </div>
-  
+
 </body>
+
 </html>
 
 <script type="module">
 
     import header from '../components/navbar.js';
     // console.log(header());
-   let nav= document.getElementById('header')
-   nav.innerHTML=header()
+    let nav = document.getElementById('header')
+    nav.innerHTML = header()
 
-    
+
     import footer from '../components/footer.js';
     //  console.log(footer());
-     document.getElementById('footer').innerHTML=footer()
-    </script>
+    document.getElementById('footer').innerHTML = footer()
+    let y = JSON.parse(localStorage.getItem("totalprice"));
+    if (y == null) {
+        let x = document.querySelector("#rs");
+        // x.innerText = null;
+        x.innerText = `₹0`;
+    }
+    else {
+        let x = document.querySelector("#rs");
+        x.innerText = null;
+        x.innerText = y;
+    }
+</script>
 
-<script src="./scripts/signin.js" >
+<script src="./scripts/signin.js">
 
 </script>

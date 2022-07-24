@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+
     <link rel="stylesheet" href="style/header.css">
 
     <link rel="stylesheet" href="../footer/style/footer.css">
     <link rel="stylesheet" href="style/otp.css">
 
 
-   
+
 </head>
+
 <body>
     <div id="header"> </div>
 
     <div id="otp">
-        <div><h6 id="otp6">Sign In / Sign up</h6></div>
-        <div><img  class="img_align" src="https://photos.prnewswire.com/prnfull/20160205/330341LOGO" alt="chicken"></div>
-        <div><h2>WE JUST TEXTED YOU</h2></div>
+        <div>
+            <h6 id="otp6">Sign In / Sign up</h6>
+        </div>
+        <div><img class="img_align" src="https://photos.prnewswire.com/prnfull/20160205/330341LOGO" alt="chicken"></div>
+        <div>
+            <h2>WE JUST TEXTED YOU</h2>
+        </div>
         <div>Please enter verification code we just send you</div>
-        <div ><input id="otp4" type="number"></div>
-        <div ><h5 id="otp3">your code will be expired in:
-        <div><p id="timer"></p></div> sec </h5></div>
-        <div > <a href="signin.html" id="otp2">Resend the code</a>  </div>
-        <div > <input id="otp1" onclick="submit()" type="submit"></div>
+        <div><input id="otp4" type="number"></div>
+        <div>
+            <h5 id="otp3">your code will be expired in:
+                <div>
+                    <p id="timer"></p>
+                </div> sec
+            </h5>
+        </div>
+        <div> <a href="signin.html" id="otp2">Resend the code</a> </div>
+        <div> <input id="otp1" onclick="submit()" type="submit"></div>
     </div>
     <div id="footer"> </div>
 
 </body>
+
 </html>
 
 
@@ -38,16 +50,24 @@
 
     import header from '../components/navbar.js';
     // console.log(header());
-   let nav= document.getElementById('header')
-   nav.innerHTML=header()
+    let nav = document.getElementById('header')
+    nav.innerHTML = header()
 
-    
+
     import footer from '../components/footer.js';
     //  console.log(footer());
-     document.getElementById('footer').innerHTML=footer()
-    </script>
+    document.getElementById('footer').innerHTML = footer()
+    let y = JSON.parse(localStorage.getItem("totalprice"));
+    if (y == null) {
+        let x = document.querySelector("#rs");
+        // x.innerText = null;
+        x.innerText = `₹0`;
+    }
+    else {
+        let x = document.querySelector("#rs");
+        x.innerText = null;
+        x.innerText = y;
+    }
+</script>
 
 <script src="./scripts/otp.js">  </script>
-
-
-

@@ -2,11 +2,12 @@
     font-family: 'Roboto Condensed';
 }
 
-body {
+#body {
+    /* margin-top: 60px; */
     width: 85%;
     display: flex;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 20px;
     justify-content: space-between;
 }
 
@@ -67,7 +68,8 @@ body {
 }
 
 #cddetails>h4 {
-    margin-top: 8px;
+    margin-bottom: 20px;
+
 }
 
 #cddetails>div {

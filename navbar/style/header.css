@@ -4,10 +4,11 @@
     padding: 0;
 }
 
-header {
+#header {
     width: 100%;
-     position: sticky; 
+    position: sticky;
     top: 0;
+    z-index: 8000;
     background-color: white;
 }
 
@@ -15,7 +16,7 @@ nav {
     display: flex;
     width: 85%;
     margin: auto;
-     padding-bottom: 25px; 
+    padding-bottom: 25px;
     margin-top: 10px;
 }
 
@@ -23,11 +24,11 @@ nav {
     width: 50%;
     display: flex;
     /* justify-content: space-around; */
-    margin-right: 17%; 
+    margin-right: 17%;
     margin-top: 10px;
 }
 
-.img_align{
+.img_align {
     height: 40px;
     vertical-align: middle;
 
@@ -36,41 +37,46 @@ nav {
 .box2 {
     width: 40%;
     display: flex;
-     justify-content: space-around; 
-     margin-top: 10px;
-     padding-left: 200px;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding-left: 200px;
 }
-.box2>a>img{
+
+.box2>a>img {
     height: 50px;
 }
+
 .box1>a {
     text-decoration: none;
     vertical-align: top;
     font-family: sans-serif;
     /* padding-top: 15px; */
-     margin-top: 20px; 
+    margin-top: 20px;
     font-size: 15px;
     color: black;
     font-weight: bold;
     margin-left: 40px;
 
 }
-.box1>a:hover{
-   text-decoration: underline;
+
+.box1>a:hover {
+    text-decoration: underline;
 }
+
 .box2>a {
     text-decoration: none;
     vertical-align: top;
     font-family: sans-serif;
-    padding-top: 15px; 
+    padding-top: 15px;
     margin-top: 2px;
     font-size: 15px;
     color: black;
     font-weight: bold;
 
 }
-.box2>a:hover{
-   text-decoration: underline;
+
+.box2>a:hover {
+    text-decoration: underline;
 }
 
 .nav-bottom {
@@ -88,7 +94,8 @@ nav {
     font-size: 17px;
     color: white;
 }
-#btn_property>button:hover{
+
+#btn_property>button:hover {
     background-color: #e21339;
 }
 
@@ -106,63 +113,3 @@ nav {
     margin-top: 10px;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

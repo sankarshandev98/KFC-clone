@@ -10,64 +10,72 @@
         href="https://imgs.search.brave.com/6S1AWiLxtAB4sJx--5Mi007xoylFUxHFxJ3hrUSE_HE/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC54/bkJza2tMVzRKd1Zp/N1FYN3ZjeFd3SGFI/YSZwaWQ9QXBp">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Condensed">
     <link rel="stylesheet" href="./checkout.css">
+    <link rel="stylesheet" href="../navbar/style/header.css">
+    <link rel="stylesheet" href="../footer/style/footer.css">
 </head>
 
 <body>
-    <div>
-        <div id="mcart">
-            <img
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAeCAYAAAB5c901AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABNSURBVHgB7c9BDQAgAMPAgQ4c4F8KDvABFuBHSe+9LGmZ6SsXWkY52b3yW/M5A+kMpDOQzkA6A+kMpDOQzkA6A+kMpDOQzkA6A+kMpNu9MQhKmC+cDgAAAABJRU5ErkJggg==">
-            <h1>CHECKOUT</h1>
+    <div id="header"> </div>
+    <div id="gs_checout">
+        <div id="U_body">
+            <div id="mcart">
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAeCAYAAAB5c901AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABNSURBVHgB7c9BDQAgAMPAgQ4c4F8KDvABFuBHSe+9LGmZ6SsXWkY52b3yW/M5A+kMpDOQzkA6A+kMpDOQzkA6A+kMpDOQzkA6A+kMpNu9MQhKmC+cDgAAAABJRU5ErkJggg==">
+                <h1>CHECKOUT</h1>
+            </div>
+            <div id="c">
+                <h3><span><img src="https://online.kfc.co.in/static/media/Lock.e846db0a.svg" alt=""></span> Secure
+                    Checkout
+                </h3>
+            </div>
         </div>
-        <div id="c">
-            <h3><span><img src="https://online.kfc.co.in/static/media/Lock.e846db0a.svg" alt=""></span> Secure
-                Checkout
-            </h3>
+
+        <div id="down">
+            <div id="left">
+                <div id="l3">
+                    <div id="sign">
+                        <h1>CONTACT INFO</h1>
+                        <button>Sign in</button>
+                    </div>
+                    <div id="form">
+                        <input type="text" required placeholder="Full Name">
+                        <hr>
+                        <input type="number" required placeholder="Phone Number">
+                        <hr>
+                        <input type="text" required placeholder="Email">
+                        <hr>
+                    </div>
+                </div>
+                <div id="l4">
+                    <h1>PAYMENT</h1>
+                    <div>
+                        <a href="" style="font-weight: bold;color: black;">Add Payment Method</a>
+                    </div>
+                </div>
+            </div>
+            <div id="right">
+                <div id="rd">
+                    <div id="rd2">
+                        <img src="https://online.kfc.co.in/static/media/Offers_Coupon_Icon.72b94c41.svg" alt="">
+                        <span>Apply Offers & Deals</span>
+                        <button>View All</button>
+                    </div>
+                    <div id="rd3">
+                        <p>Subtotal</p>
+                        <p id="total"></p>
+                    </div>
+                    <div id="rd4">
+                        <p>GST</p>
+                        <p>78</p>
+                    </div>
+                    <hr style="color: grey;">
+                    <button>Continue to Payment <span id="ctotal"></span></button>
+                </div>
+            </div>
         </div>
     </div>
-    <div id="down">
-        <div id="left">
-            <div id="l3">
-                <div id="sign">
-                    <h1>CONTACT INFO</h1>
-                    <button>Sign in</button>
-                </div>
-                <div id="form">
-                    <input type="text" required placeholder="Full Name">
-                    <hr>
-                    <input type="number" required placeholder="Phone Number">
-                    <hr>
-                    <input type="text" required placeholder="Email">
-                    <hr>
-                </div>
-            </div>
-            <div id="l4">
-                <h1>PAYMENT</h1>
-                <div>
-                    <a href="" style="font-weight: bold;color: black;">Add Payment Method</a>
-                </div>
-            </div>
-        </div>
-        <div id="right">
-            <div id="rd">
-                <div id="rd2">
-                    <img src="https://online.kfc.co.in/static/media/Offers_Coupon_Icon.72b94c41.svg" alt="">
-                    <span>Apply Offers & Deals</span>
-                    <button>View All</button>
-                </div>
-                <div id="rd3">
-                    <p>Subtotal</p>
-                    <p id="total"></p>
-                </div>
-                <div id="rd4">
-                    <p>GST</p>
-                    <p>78</p>
-                </div>
-                <hr style="color: grey;">
-                <button>Continue to Payment <span id="ctotal"></span></button>
-            </div>
-        </div>
     </div>
+    <div id="footer"> </div>
 </body>
 
 </html>
@@ -76,4 +84,16 @@
     let price = JSON.parse(localStorage.getItem('totalprice'));
     document.getElementById('total').innerText = price;
     document.getElementById('ctotal').innerText = price;
+</script>
+<script type="module">
+
+    import header from '../components/navbar.js';
+    // console.log(header());
+    let nav = document.getElementById('header')
+    nav.innerHTML = header()
+
+
+    import footer from '../components/footer.js';
+    //  console.log(footer());
+    document.getElementById('footer').innerHTML = footer()
 </script>

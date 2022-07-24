@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC:World Famous Fried Chicken</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Condensed">
+    <link rel="icon"  href="https://imgs.search.brave.com/6S1AWiLxtAB4sJx--5Mi007xoylFUxHFxJ3hrUSE_HE/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC54/bkJza2tMVzRKd1Zp/N1FYN3ZjeFd3SGFI/YSZwaWQ9QXBp" >
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="./style/popup.css">
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./style/popup.css">
+<style>
+   @media all and (min-width:324px) and (max-width:1023px) {
+    #delivery{
+        width: 100%;
+        display:grid;
+        grid-template-rows: repeat(2,1fr);
+        
+        text-align: center;
+    }
+    
+    /* #deals{
+    width: 100%;
+    
+   }
+   #deals h2{
+    font-size:xx-large;
+    font-weight: bold;
+   } */
+
+   #pastorder{
+    background: #f8f7f5;
+    /* display: flex; */
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.stripes {
+  
+    width: 45px;
+    height: 200x;
+    background: repeating-linear-gradient(90deg,#e4002b,#e4002b 8px,#fff 0,#fff 16px);
+    margin: auto;
+
+}
+#menu{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-evenly;
+    gap: 20px;
+    text-align: center;
+}
+.menutext{
+    text-align: center;
+    
+    
+    font-weight:bolder;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: .5px;
+    
+    color: #202124;
+    bottom: 7%;
+    margin-top: 10px;
+}
+.stripes1 {
+    
+    margin: auto;
+}
+.greeting-heading1{
+    /* display: grid;
+    grid-template-columns: repeat(1,1fr);
+    box-sizing: border-box;
+    padding: 50px;
+    justify-content: space-around; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+}
+.greeting-heading1 button{
+    /* background-color: #202124;
+    color: #fff;
+    border: none;
+    display: block;
+    gap: 10px;
+    align-items: center;
+    
+    justify-content: center;
+    font-weight: 200;
+    font-size: 20px; */
+    text-align: center;
+    
+    margin-right:5px;
+}
+.greeting-heading1 a{
+    background-color: #202124;
+    color: #fff;
+    border: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-right: -50%;
+    margin-top: 5%;
+    justify-content: center;
+    font-weight: 200;
+    font-size: 20px;
+    text-decoration: none;
+}
+ .greeting-heading1 div{
+    font-family: "National 2 Condensed"; 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 29.71px;
+} 
+   }
+    
+
+</style>
+</head>
+<body >
+    <div class="chickenload">
+
+    </div>
+    <!-- nav bar start -->
+    <div id="nav"></div>
+    <!-- nav bar end -->
+    <!-- start order button -->
+    <div id="delivery">
+        <h3>LET'S ORDER FOR DELIVERY,PICK UP, OR DINE-IN </h3>
+        <a href="#"><button  type="submit" onclick="popup()"> Start Order</button></a>
+    </div>
+    <!-- start order button end -->
+    <!-- post order start -->
+    <div id="main">
+        <div id="pastorder">
+            <div class="stripes"></div>
+            <div class="greeting-heading">WELCOME TO KFC!</div>
+        
+        </div>
+        <div id="browse">
+            <h2>BROWSE CATEGORIES</h2>
+            <div class="horizontal"></div>
+        </div>
+        <div id="menu">
+           <a href="http://127.0.0.1:5501/for-stick-2556/Menu/menu.html#Chicken_Buckets"><div class="menucard"  >
+            <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT86.jpg?ver=17.57" alt="chicken buckets">
+            <div class="menutext">CHICKEN BUCKETS</div>
+
+         </div></a>
+            
+            <div>
+                <a href="http://127.0.0.1:5501/for-stick-2556/Menu/menu.html#New_Launch"><div class="menucard"  >
+                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT200.jpg?ver=17.57" alt="new launch">
+                    <div class="menutext">NEW LAUNCH</div>
+        
+                 </div></a>
+            </div>
+            <div>
+                <a href="http://127.0.0.1:5501/for-stick-2556/Menu/menu.html#Biryani_Buckets"><div class="menucard"  >
+                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT190.jpg?ver=17.57" alt="biryani Buckets">
+                    <div class="menutext">BIRYANI BUCKETS</div>
+        
+                 </div></a>
+            </div>
+            <div>
+                <a href="../Menu/menu.html"><div class="menucard"  >
+                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT158.jpg?ver=17.57" alt="box meals">
+                    <div class="menutext">BOX MEALS</div>
+        
+                 </div></a>
+            </div>
+            <div>
+                <a href="http://127.0.0.1:5501/for-stick-2556/Menu/menu.html#Burgers"><div class="menucard"  >
+                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT99.jpg?ver=17.57" alt="burger">
+                    <div class="menutext">BURGERS</div>
+        
+                 </div></a>
+            </div>
+            <div>
+                <a href="http://127.0.0.1:5501/for-stick-2556/Menu/menu.html#Stay_Home_Specials"><div class="menucard"  >
+                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT178.jpg?ver=17.57" alt="stay home special">
+                    <div class="menutext">STAY HOME SPECIALS</div>
+        
+                 </div></a>
+            </div>
+            <div>
+                <a href="http://127.0.0.1:5501/for-stick-2556/Menu/menu.html#Snacks"><div class="menucard"  >
+                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT89.jpg?ver=17.57" alt="SNACKS">
+                    <div class="menutext">SNACKS</div>
+        
+                 </div></a>
+            </div>
+            <!-- <div>
+                <a href="#"><div class="menucard"  >
+                    <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT92.jpg?ver=17.57" alt="beverages">
+                    <div class="menutext">BEVERAGES</div>
+        
+                 </div></a>
+            </div> -->
+            <div>
+                <a href="http://127.0.0.1:5501/for-stick-2556/Menu/menu.html"><div class="menucard"  >
+                    <img src="https://online.kfc.co.in/static/media/finger_lickin.fc21c805.svg" alt="its finger_lickin">
+                    <div class="menutext">View All Menu <img src="https://online.kfc.co.in/static/media/black_right_arrow.a801582c.svg" alt="arrows"></div>
+        
+                 </div></a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- post order end -->
+    <!-- offer $ Deals start -->
+    <div id="offer">
+        <div id="offer-icon">
+            <div>
+                <div class="stripes1"></div>
+                
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" width="80" height="42" viewBox="0 0 80 42" fill="none" class="injected-svg" data-src="/static/media/Stripes_Small_OffersIcon.87fc6256.svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect width="16.4103" height="41.0256" fill="#E4002B"></rect>
+                <rect width="32.8203" height="41.0256" fill="#E4002B"></rect>
+                <rect width="63.5898" height="41.0256" fill="#E4002B"></rect>
+              </svg>   -->
+            </div>
+            <div class="greeting-heading1">
+                <div>OFFERS & DEALS</div>
+                <a href="../Deals/deals.html"> <button>View All Deals <img src="./media/arrow-18-16.png" alt="arrows"></button></a>
+               
+            </div>
+            <!-- new concept start -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <div class="master">
+                      <div>
+                          
+                          <img src="./media/ADDCHK99.jpg" alt="chickenzinger" class="offersImageText-background">
+                      </div>
+                      <div class="content-red">
+                          1Pc free Chicken Zinger on a cart value of 399 or above on first order. only for registered users.
+                      </div>
+                      <div class="content-text">
+                          1Pc free Chicken Zinger on a cart value of 399 or above on first order. only for registered users.
+                      </div>
+                      <div class="button">
+                          <a href="#"><div class="readit" type="submit" onclick="chickenzinger()">View Details</div></a>
+                          <a href="#"><button type="submit" onclick="popup()">Redeem</button> </a>
+                      </div>
+                  </div></div>
+                  <div class="swiper-slide">
+                      <div class="master">
+                      <div>
+                      <img src="./media/VEGZINGER.jpg" alt="No-Image" class="offersImageText-background">
+                  </div>
+                  <div class="content-red">
+                      1 Pc Free Veg Zinger on a cart value of 399 or above on first order. Only for registered user
+                  </div>
+                  <div class="content-text">
+                      1 Pc Free Veg Zinger on a cart value of 399 or above on first order. Only for registered user
+                  </div>
+                  <div class="button">
+                      <a href="#"><div class="readit" type="submit" onclick="vegzinger()">View Details</div></a>
+                      <a href="#"><button type="submit" onclick="popup()">Redeem</button> </a>
+                  </div></div></div>
+                  <div class="swiper-slide">
+                      <div class="master">
+                       <div>
+                      <img src="./media/ADDCHK99.jpg" alt="No-Image" class="offersImageText-background">
+                  </div>
+                  <div class="content-red">
+                      Add 2 Pc Hot n Crispy Chicken @ just Rs 99 on min cart value of Rs 499 or more. Applicable on 2nd & 3rd order for signed in user.
+                  </div>
+                  <div class="content-text">
+                      Add 2 Pc Hot n Crispy Chicken @ just Rs 99 on min cart value of Rs 499 or more. Applicable on 2nd & 3rd order for signed in user.
+                  </div>
+                  <div class="button">
+                      <a href="#"><div class="readit" type="submit" onclick="crispy()">View Details</div></a>
+                      <a href="#"><button type="submit" onclick="popup()">Redeem</button> </a>
+                  </div></div></div>
+                  <div class="swiper-slide">
+                      <div class="master">
+                      <div>
+                      <img src="./media/BIGSAVE.jpg" alt="No-Image" class="offersImageText-background">
+                  </div>
+                  <div class="content-red">
+                      Upto Rs 100 off on min cart value of Rs 599 or more. Applicable on 4th order onwards for signed in user.
+                  </div>
+                  <div class="content-text">
+                      Upto Rs 100 off on min cart value of Rs 599 or more. Applicable on 4th order onwards for signed in user.
+                  </div>
+                  <div class="button">
+                      <a href="#"><div class="readit" type="submit"onclick="off()">View Details</div></a>
+                      <a href="#"><button type="submit" onclick="popup()">Redeem</button> </a>
+                  </div></div></div>
+                  
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- <div class="swiper-pagination"></div> -->
+              </div>
+            <!-- new concept end -->
+        </div>
+    </div>
+     <!-- offer $ Deals end -->
+    <!-- //home page slider// -->
+    <!-- popup item  start-->
+    <!-- order popup start -->
+    <div class="order-pop">
+        <div class="ph">
+         <h1>START YOUR ORDER</h1>
+         <Button type="button" onclick="closepopup()">
+             <img src="https://online.kfc.co.in/static/media/PopupCloseBtn.ee8133ae.svg" alt="cross">
+                 
+         </Button>
+        </div>
+        <br>
+        <div class="pm">
+         <h2>HOW WOULD YOU LIKE TO RECEIVE YOUR ORDER?</h2>
+         <div id="totalbutton">
+             <button class="pickup"> Pick up</button>
+             <br>
+             <button class="dinein">Dine In</button>
+            <br>
+            <button class="delivery">Delivery</button>
+         </div> 
+     </div>
+         
+     </div>
+     <!-- order popup End -->
+     <!-- crispy popup start -->
+     <div class="crispy-pop">
+        <div class="ph">
+         <h1>Offer</h1>
+         <Button type="button" onclick="closecrispy()">
+             <img src="https://online.kfc.co.in/static/media/PopupCloseBtn.ee8133ae.svg" alt="cross">
+                 
+         </Button>
+        </div>
+        <br>
+        <div class="pm">
+         <h2>Add 2 Pc Hot n Crispy Chicken @ just 99 on min cart value of Rs. 499 or more. Applicable on 2nd & 3rd order for signed in user</h2>
+         <div id="totalbutton">
+             <h6 class="pickup1"> Valid to 01/01/30</h6>
+             <br>
+             <h6 class="dinein1">Add 2 Pc Hot n Crispy Chicken @ just 99 on min cart value of Rs. 499 or more. Applicable on 2nd & 3rd order for signed in user</h6>
+            <br>
+            <button class="delivery1">Redeem</button>
+         </div> 
+     </div>
+         
+     </div>
+     <!-- crispy popup End -->
+     <!-- veg zinger popup start -->
+     <div class="vegzinger-pop">
+        <div class="ph">
+         <h1>Offer</h1>
+         <Button type="button" onclick="closevegzinger()">
+             <img src="https://online.kfc.co.in/static/media/PopupCloseBtn.ee8133ae.svg" alt="cross">
+                 
+         </Button>
+        </div>
+        <br>
+        <div class="pm">
+         <h2>1 PC FREE VEG ZINGER ON A CART VALUE OF 399 OR ABOVE ON FIRST ORDER. ONLY FOR REGISTERED USERS.</h2>
+         <div id="totalbutton">
+             <h6 class="pickup1"> Valid to 31/12/30</h6>
+             <br>
+             <h6 class="dinein1">1 Pc free Veg Zinger on a cart value of 399 or above on first order. Only for registered users.</h6>
+            <br>
+            <button class="delivery1">Redeem</button>
+         </div> 
+     </div>
+         
+     </div>
+     <!-- veg zinger popup end -->
+     <!-- chicken zinger popup start -->
+     <div class="chickenzinger-pop">
+        <div class="ph">
+         <h1>Offer</h1>
+         
+         <Button type="button" onclick="closechickenzinger()">
+             <img src="https://online.kfc.co.in/static/media/PopupCloseBtn.ee8133ae.svg" alt="cross">
+                 
+         </Button>
+        </div>
+        <br>
+        <div class="pm">
+         <h2>1 PC FREE CHICKEN ZINGER ON A CART VALUE OF 399 OR ABOVE ON FIRST ORDER. ONLY FOR REGISTERED USERS.</h2>
+         <div id="totalbutton">
+             <h6 class="pickup1"> Valid to 31/12/30</h6>
+             <br>
+             <h6 class="dinein1">1 Pc free Chicken Zinger on a cart value of 399 or above on first order. Only for registered users.</h6>
+            <br>
+            <button class="delivery1">Redeem</button>
+         </div> 
+     </div>
+         
+     </div>
+     <!-- chicken zinger popup end -->
+     <!-- offer popup start -->
+     <div class="offer-pop">
+        <div class="ph">
+         <h1>Offer</h1>
+         <Button type="button" onclick="closeoff()">
+             <img src="https://online.kfc.co.in/static/media/PopupCloseBtn.ee8133ae.svg" alt="cross">
+                 
+         </Button>
+        </div>
+        <br>
+        <div class="pm">
+         <h2>Upto Rs 100 off on min cart value of Rs 599 or more . Applicable on 4th order onwards for signed in user.</h2>
+         <div id="totalbutton">
+             <h6 class="pickup1"> Valid to 01/01/23</h6>
+             <br>
+             <h6 class="dinein1">Upto Rs 100 off on min cart value of Rs 599 or more . Applicable on 4th order onwards for signed in user.</h6>
+            <br>
+            <button class="delivery1">Redeem</button>
+         </div> 
+     </div>
+         
+     </div>
+     <!-- offer popup end -->
+    <!-- popup item  End-->
+
+    
+      <div id="footer"></div>
+</body>
+</html>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+ <!-- Swiper JS -->
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script src="./script/script.js">
+  
+ </script>
+ <script>
+    let order_popup=document.querySelector(".order-pop");
+    // let data=document.querySelector("`#");
+    function popup(){
+      
+        order_popup.classList.add("open-popup");  
+        console.log("tripathiji");
+      
+    }
+    function closepopup(){
+       
+        order_popup.classList.remove("open-popup");  
+    }
+    let offer_pop=document.querySelector(".offer-pop");
+    // let data=document.querySelector("`#");
+    function off(){
+      
+        offer_pop.classList.add("open-popup");  
+        console.log("tripathiji");
+      
+    }
+    function closeoff(){
+       
+        offer_pop.classList.remove("open-popup");  
+    }
+    let chickenzinger_pop=document.querySelector(".chickenzinger-pop");
+    // let data=document.querySelector("`#");
+    function chickenzinger(){
+      
+        chickenzinger_pop.classList.add("open-popup");  
+        console.log("tripathiji");
+      
+    }
+    function closechickenzinger(){
+       
+        chickenzinger_pop.classList.remove("open-popup");  
+    }
+    let vegzinger_pop=document.querySelector(".vegzinger-pop");
+    // let data=document.querySelector("`#");
+    function vegzinger(){
+      
+        vegzinger_pop.classList.add("open-popup");  
+        console.log("tripathiji");
+      
+    }
+    function closevegzinger(){
+       
+        vegzinger_pop.classList.remove("open-popup");  
+    }
+    let crispy_pop=document.querySelector(".crispy-pop");
+    // let data=document.querySelector("`#");
+    function crispy(){
+      
+        crispy_pop.classList.add("open-popup");  
+        console.log("tripathiji");
+      
+    }
+    function closecrispy(){
+       
+        crispy_pop.classList.remove("open-popup");  
+    }
+ </script>

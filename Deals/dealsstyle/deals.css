@@ -1,0 +1,579 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: Roboto Condensed; */
+    font-family: "National 2 Condensed";
+}
+#delivery{
+   
+background-color:#202124;
+color: #fff;
+padding: 5px 10px;
+
+box-sizing: border-box;
+display: flex;
+justify-content:center;
+align-items: center;
+gap: 1%;
+}
+#delivery button{
+background: #e4002b;
+color: #fff;
+padding: 10px 15px;
+border-radius: 15px;
+border: none;
+
+/* font-family: "National 2 Regular"; */
+line-height: 24px;
+font-size: 14px;
+margin-top: 4px;
+font-weight: 500;
+margin-left: 10px;
+
+}
+h3 button:hover{
+cursor: pointer;
+}
+#deals{
+width: 100%;
+height: 280px;
+background-color: #202124;
+background-position: 50%;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+
+background-image: url("https://online.kfc.co.in/static/media/offer_deals_banner.777f20e1.svg");
+}
+#deals h2{
+
+color: #fff;
+font-style: normal;
+font-weight: 700;
+font-size: 74px;
+line-height: 78px;
+text-align: center;
+letter-spacing: 2px;
+text-transform: uppercase;
+margin: auto;
+}
+#national{
+
+
+margin:  0px 100px;
+
+}
+#pastorder{
+background: #f8f7f5;
+/* display: flex; */
+padding-bottom: 60px;
+}
+.stripes {
+width: 40px;
+height: 20px;
+background: repeating-linear-gradient(90deg,#e4002b,#e4002b 8px,#fff 0,#fff 16px);
+}
+.greeting-heading{
+/* border: 1px solid black;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 50%; */
+display: flex;
+justify-content: space-between;
+
+}
+.greeting-heading h2 {
+/* font-family: "National"; */
+
+font-weight: 700;
+font-size: 44px;
+line-height: 58px;
+text-transform: uppercase;
+color: #202124;
+margin-top: 29.71px;
+
+}
+.greeting-heading a{
+/* font-weight: 700;
+font-size: 44px;
+line-height: 58px; */
+/* text-transform: uppercase; */
+color: #202124;
+margin-top: 45.71px;
+}
+
+.master{
+
+
+background: #fff;
+box-shadow: 0 4px 7px rgb(0 0 0 / 10%);
+border-radius: 8px;
+
+margin-right: 2.3%;
+}
+.master img{
+width: 100%;
+}
+.store-card{
+position: relative;
+height: auto;
+background-color: #fff;
+width: 100%;
+padding: 0;
+margin: 0;
+}
+.store-card img{
+width: 100%;
+
+display: block;
+
+}
+
+
+.storetext{
+position:absolute;
+top: 40%;
+left: 50%;
+transform: translate(-50%,-50%);
+color: #fff;
+font-size: xx-large;
+}
+.store-btn{
+position:absolute;
+top: 70%;
+left: 50%;
+transform: translate(-50%,-50%);
+border: 1px solid white;
+color: #fff;
+font-size: large;
+background-color: #202124;
+box-sizing: border-box;
+padding: 2% 10%;
+border-radius: 35px;
+}
+.store-btn:hover{
+background-color: #fff;
+color: #202124;
+cursor: pointer;
+}
+.login-card{
+background-color: 
+#e4002b;
+text-align: center;
+color: #fff;
+font-size: xx-large;
+box-sizing: border-box;
+padding:10% ;
+/* display: grid;
+grid-template-rows: repeat(2,1fr); */
+/* justify-content: center; */
+/* align-items: center; */
+
+/* margin: 0px 35px;
+border-radius: 35px; */
+}
+#grid{
+margin: 0px 100px 0px 100px;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: repeat(2,1fr);
+gap:5%;
+
+/* border: 1px solid black; */
+/* width: 100%; */
+/* height: 50%; */
+}
+.login-btn{
+border: 1px solid white;
+color: #fff;
+font-size: large;
+background-color: #e4002b;
+box-sizing: border-box;
+padding: 20px 90px;
+border-radius: 35px;
+margin-top: 50%;
+}
+.login-btn:hover{
+background-color: #fff;
+color: #e4002b;
+cursor: pointer;
+}
+/* import style */
+.button{
+display: flex;
+justify-content: space-between;
+background-color: #fff;
+color: #202124;
+box-sizing: border-box;
+padding: 10%;
+border-radius: 100%;
+
+}
+ .content-red{
+/* height: 43px; */
+/* font-family: "National 2 Condensed"; */
+font-size: 30px;
+font-weight: 900;
+line-height: 43px;
+color: #e4002b;
+text-transform: uppercase;
+overflow: hidden;
+text-overflow: ellipsis;
+text-align: center;
+display: -webkit-box;
+-webkit-line-clamp: 1;
+-webkit-box-orient: vertical;
+margin-left: 0px;
+}
+.content-text{   
+ height: 48px;
+
+font-weight: 400;
+font-size: 14px;
+color: #202124;
+overflow: hidden;
+text-overflow: ellipsis;
+-webkit-line-clamp: 2;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+
+position: relative;
+
+background-color: #f8f7f5;
+border-radius: 8px;
+text-align: center;
+display: flex;
+flex-direction: column;
+box-sizing: border-box;
+padding:0% 5%;
+}
+.button button{
+border-radius: 35px;
+padding: 15px 30px;
+font-size: large;
+margin: 0px 10px;
+background-color:#fff;
+color: #202124;
+/* border: none; */
+border:1px solid;
+border-color: #202124
+}
+.button button:hover{
+background-color: #202124;
+color: white;
+cursor: pointer;
+}
+.readit{
+margin-top: 20px; 
+}
+.readit:hover{
+background-color: #a1a1a1;
+}
+@media all and (min-width:768px) and (max-width:1023px){
+#delivery{
+    width: 100%;
+    display:grid;
+    grid-template-rows: repeat(2,1fr);
+    /* justify-content: center;
+    align-items: center; */
+    text-align: center;
+}
+#deals{
+width: 100%;
+
+}
+#deals h2{
+font-size:xx-large;
+font-weight: bold;
+}
+#pastorder{
+background: #f8f7f5;
+/* display: flex; */
+padding-bottom: 60px;
+}
+.stripes {
+
+width: 45px;
+height: 200x;
+background: repeating-linear-gradient(90deg,#e4002b,#e4002b 8px,#fff 0,#fff 16px);
+margin: auto;
+
+}
+.greeting-heading{
+/* border: 1px solid black;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 50%; */
+display: grid;
+grid-template-columns: repeat(1,1fr);
+justify-content: center;
+align-items: center;
+
+}
+.greeting-heading h2 {
+/* font-family: "National"; */
+
+font-weight: 700;
+font-size: 34px;
+line-height: 58px;
+text-transform: uppercase;
+color: #202124;
+;
+margin: 20px auto;
+
+}
+.greeting-heading a{
+/* font-weight: 700;
+font-size: 44px;
+line-height: 58px; */
+/* text-transform: uppercase; */
+color: #202124;
+margin:20px auto;
+}
+#grid{
+
+margin: 0px 100px 0px 100px;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-template-rows: repeat(3,1fr);
+gap:5%;
+
+/* border: 1px solid black; */
+/* width: 100%; */
+height: 50%;
+}
+.store-card{
+position: relative;
+height: auto;
+background-color: #fff;
+width: 100%;
+padding: 0;
+margin: 0;
+}
+.store-card img{
+width: 100%;
+
+display: block;
+
+}
+
+
+.storetext{
+position:absolute;
+top: 40%;
+left: 50%;
+transform: translate(-50%,-50%);
+color: #fff;
+font-size: large;
+font-weight: 1800;
+}
+.store-btn{
+position:absolute;
+top: 70%;
+left: 50%;
+transform: translate(-50%,-50%);
+border: 1px solid white;
+color: #fff;
+font-size:medium;
+background-color: #202124;
+box-sizing: border-box;
+padding: 2% 10%;
+border-radius: 35px;
+}
+.login-btn{
+border: 1px solid white;
+color: #fff;
+font-size: large;
+background-color: #e4002b;
+box-sizing: border-box;
+padding: 10px 45px;
+border-radius: 35px;
+}
+.login-btn:hover{
+background-color: #fff;
+color: #e4002b;
+cursor: pointer;
+}
+.button button{
+border-radius: 35px;
+padding: 10px 25px;
+font-size: medium;
+margin: 0px 10px;
+background-color:#fff;
+color: #202124;
+/* border: none; */
+border:1px solid;
+border-color: #202124
+}
+.button button:hover{
+background-color: #202124;
+color: white;
+cursor: pointer;
+}
+.readit{
+margin-top: 15px; 
+}
+.readit:hover{
+background-color: #a1a1a1;
+}
+}
+@media all and (min-width:324px) and (max-width:767px){
+#delivery{
+    width: 100%;
+    display:grid;
+    grid-template-rows: repeat(2,1fr);
+    /* justify-content: center;
+    align-items: center; */
+    text-align: center;
+}
+#deals{
+width: 100%;
+
+}
+#deals h2{
+font-size:xx-large;
+font-weight: bold;
+}
+#pastorder{
+background: #f8f7f5;
+/* display: flex; */
+padding-bottom: 60px;
+}
+.stripes {
+
+width: 45px;
+height: 200x;
+background: repeating-linear-gradient(90deg,#e4002b,#e4002b 8px,#fff 0,#fff 16px);
+margin: auto;
+
+}
+.greeting-heading{
+/* border: 1px solid black;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 50%; */
+display: grid;
+grid-template-columns: repeat(1,1fr);
+justify-content: center;
+align-items: center;
+
+}
+.greeting-heading h2 {
+/* font-family: "National"; */
+
+font-weight: 700;
+font-size: 34px;
+line-height: 58px;
+text-transform: uppercase;
+color: #202124;
+;
+margin: 20px auto;
+
+}
+.greeting-heading a{
+/* font-weight: 700;
+font-size: 44px;
+line-height: 58px; */
+/* text-transform: uppercase; */
+color: #202124;
+margin:20px auto;
+}
+#grid{
+display: block;
+/* margin: 0px 100px 0px 100px;
+display: block;
+/* grid-template-columns: repeat(1,1fr); */
+grid-template-rows: repeat(6,100px);
+
+
+
+width: 70%;
+
+}
+
+.store-card{
+position: relative;
+height: auto;
+background-color: #fff;
+width: 100%;
+padding: 0;
+margin: 0px 0px 30px 0px;
+}
+.store-card img{
+width: 100%;
+border-radius: 20px 20px 0px 0px;
+display: block;
+
+}
+
+
+.storetext{
+position:absolute;
+top: 40%;
+left: 50%;
+transform: translate(-50%,-50%);
+color: #fff;
+font-size: large;
+font-weight: 1800;
+}
+.store-btn{
+position:absolute;
+top: 70%;
+left: 50%;
+transform: translate(-50%,-50%);
+border: 1px solid white;
+color: #fff;
+font-size:medium;
+background-color: #202124;
+box-sizing: border-box;
+padding: 2% 10%;
+border-radius: 35px;
+}
+.login-btn{
+border: 1px solid white;
+color: #fff;
+font-size: large;
+background-color: #e4002b;
+box-sizing: border-box;
+padding: 10px 45px;
+border-radius: 35px;
+margin-bottom: 30px;
+}
+.login-card{
+margin-bottom: 30px;
+}
+.login-btn:hover{
+background-color: #fff;
+color: #e4002b;
+cursor: pointer;
+}
+.button button{
+border-radius: 35px;
+padding: 5px 15px;
+font-size: medium;
+margin: 0px 10px;
+background-color:#fff;
+color: #202124;
+/* border: none; */
+border:1px solid;
+border-color: #202124
+}
+.button button:hover{
+background-color: #202124;
+color: white;
+cursor: pointer;
+}
+.readit{
+margin-top: 15px; 
+font-size: smaller;
+}
+.readit:hover{
+background-color: #a1a1a1;
+}
+.master>div img{
+border-radius: 20px 20px 0px 0px ;
+}
+.master{
+border-radius: 20px;
+}
+}

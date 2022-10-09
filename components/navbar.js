@@ -16,7 +16,7 @@
 function header() {
   return `<nav>
     <div class="box1">
-        <a href="../landing_page/index.html"><img class="img_align"
+        <a href="../index.html"><img class="img_align"
                 src="https://photos.prnewswire.com/prnfull/20160205/330341LOGO" alt="chicken"></a>
         <a href="../Menu/menu.html" style="margin-top: 30px;">Menu</a>
         <a href="../Deals/deals.html" style="margin-top: 30px;">Deals</a>

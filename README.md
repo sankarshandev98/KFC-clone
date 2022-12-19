@@ -11,7 +11,7 @@
 
 ## Screenshots
 
-![App Screenshot](./image/Screenshot.png)
+<img src="https://sankarshandev98.github.io/static/media/3.de3de18d2392d325e78a.PNG" alt="1"/>
 
 
 ## Features

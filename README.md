@@ -9,15 +9,15 @@
 - JavaScript
 - Chakra UI
 
-## Screenshots
+### Screenshots
 
 <img src="https://sankarshandev98.github.io/static/media/3.de3de18d2392d325e78a.PNG" alt="1"/>
 
 
-## Features
+#### Features
 
--User Authentication
--Filter Products
--Search Functionality
--Add to cart
--Web app
+- User Authentication
+- Filter Products
+- Search Functionality
+- Add to cart
+- Web app
